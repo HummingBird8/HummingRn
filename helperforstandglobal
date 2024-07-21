@@ -1,0 +1,41 @@
+getgenv().Update = "keyhere"
+getgenv().Invisible = true
+getgenv().webhooklink = ""
+getgenv().ping = ""
+getgenv().LowMode = true
+getgenv().EarlyPlay = false
+getgenv().MoreWebhooks = true
+getgenv().FarmStandFromRib = false
+getgenv().omg = {
+    --True = you want to keep; false = you don't want to keep
+    --Rib Stands Start Here--
+        ["The World Alternate Universe"] = false,
+        ["D4C"] = false,
+        ["Tusk Act 1"] = false,
+        ["Scary Monsters"] = false,
+        ["Soft & Wet"] = false,
+    --Rib Stands End Here--
+        ["The World"] = true,
+        ["Star Platinum"] = false,
+        ["Crazy Diamond"] = true,
+        ["King Crimson"] = false,
+        ["Gold Experience"] = false,
+        ["Mr. President"] = false,
+        ["Sticky Fingers"] = false,
+        ["Magician's Red"] = true,
+        ["Purple Haze"] = false,
+        ["Killer Queen"] = false,
+        ["Aerosmith"] = false,
+        ["Silver Chariot"] = false,
+        ["Hierophant Green"] = false,
+        ["Hermit Purple"] = false,
+        ["Six Pistols"] = false,
+        ["Stone Free"] = false,
+        ["Cream"] = false,
+        ["Beach Boy"] = false,
+        ["Anubis"] = false,
+        ["The Hand"] = false,
+        ["White Album"] = false,
+        ["Whitesnake"] = false,
+        ["Red Hot Chili Pepper"] = false
+    }
