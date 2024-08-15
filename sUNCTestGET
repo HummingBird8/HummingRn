@@ -94,10 +94,10 @@
                                       "Did not return a table with "   .. i   .. " as a "   .. v            .. " (got "   .. type(info[i])   .. ")" );end else    
                                       AsCon(debug.getinfo,"debug.getinfo","function is nil");end            local a,b=pcall(function() local function v() local   
                                       function insider() return "MATAMARE";end end if debug.                getproto then local lok=debug.getproto(v,1,true);if ( 
-                                      lok[1]()~=nil) then AsCon(lok[1]()~=true ,"debug.getproto",                                                                 
-                                      "Good job trying to fake getproto, retard (exec owner) ");              AsCon(lok[1]()=="MATAMARE" ,"debug,getproto",       
-                                      "Didn't return the correct value");else AsCon(4<3 ,                     "debug.getproto","function is nil");end else      
-                                        AsCon(4<3 ,"debug.getproto","function is nil");end end);if              not a then AsCon(4<3 ,"debug.getproto",         
+                                      lok[1]()~=nil) then AsCon(lok[1]()~=true ,"debug.getproto",             "Good job trying to fake getproto");AsCon(lok[1]()  
+                                      =="MATAMARE" ,"debug,getproto",                                         "Didn't return the correct value");else AsCon(4<3 , 
+                                      "debug.getproto","function is nil");end else AsCon(4<3 ,                "debug.getproto","function is nil");end end);if   
+                                        not a then AsCon(4<3 ,"debug.getproto",                                                                                 
                                                                                                                                                                 
                                                                                                                                                               
                                                                                                                                                               
