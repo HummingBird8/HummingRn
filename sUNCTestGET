@@ -1,2 +1,1173 @@
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.7) ~  Much Love, Ferib 
 
-local function v0() local v1={["cache.invalidate"]=false,["cache.iscached"]=false,["cache.replace"]=false,cloneref=false,compareinstances=false,clonefunction=false,["crypt.generatebytes"]=false,["crypt.generatekey"]=false,getrenv=false,["crypt.decrypt"]=false,["crypt.encrypt"]=false,["crypt.hash"]=false,base64_encode=false,base64_decode=false,["debug.getconstant"]=false,["debug.getconstants"]=false,["debug.getinfo"]=false,["debug.getproto"]=false,["debug.getprotos"]=false,["debug.getstack"]=false,["debug.getupvalue"]=false,["debug.getupvalues"]=false,["debug.setconstant"]=false,["debug.setstack"]=false,getgc=false,getgenv_access=false,getloadedmodules=false,getrunningscripts=false,getscripthash=false,getscripts=false,getsenv=false,hookfunction=false,hookmetamethod=false,iscclosure=false,isexecutorclosure=false,islclosure=false,newcclosure=false,setreadonly=false,checkcaller=false,lz4compress=false,lz4decompress=false,isrbxactive=false,fireclickdetector=false,getscriptclosure=false,request=false,getcallbackvalue=false,getconnections=false,listfiles=false,writefile=false,isfolder=false,makefolder=false,appendfile=false,isfile=false,delfolder=false,delfile=false,loadfile=false,getcustomasset=false,gethui=false,gethiddenproperty=false,sethiddenproperty=false,getrawmetatable=false,isreadonly=false,getnamecallmethod=false,setscriptable=false,isscriptable=false,getinstances=false,getnilinstances=false,fireproximityprompt=false,setrawmetatable=false,getthreadidentity=false,setthreadidentity=false,getrenderproperty=false,setrenderproperty=false,["Drawing.new"]=false,["Drawing.Fonts"]=false,cleardrawcache=false,loadstring=false,["WebSocket.connect"]=false,["debug.setupvalue"]=false,readfile=false,getscriptbytecode=false};local v2={};local v3={};local v4={};local function v5() return os.date("%H:%M:%S");end local function v6(v43) task.wait(0.4 + 0 );local v44=Instance.new("Frame");v44.Name="Ascultati acest puls";v44.BackgroundTransparency=570 -(545 + 24) ;v44.Size=UDim2.new(3 -2 ,377 -(142 + 235) ,0 -0 ,4 + 11 );v44.Position=UDim2.new(977 -(553 + 424) ,0,0,0);v44.Visible=true;v44.Parent=game:GetService("CoreGui").DevConsoleMaster.DevConsoleWindow.DevConsoleUI.MainView.ClientLog;v44.LayoutOrder=1 -0 ;local v53=Instance.new("TextLabel",v44);v53.BackgroundTransparency=1 + 0 ;v53.Name="ConsoleOutput";v53.Size=UDim2.new(1 + 0 ,0 + 0 ,1 + 0 ,0 + 0 );v53.Visible=true;v53.Text=v5()   .. " -- "   .. v43 ;v53.TextSize=15;v53.TextColor3=Color3.fromRGB(402 -147 ,472 -254 ,54 + 14 );v53.TextXAlignment=Enum.TextXAlignment.Left;v53.Font=Enum.Font.Code;v53.Position=UDim2.new(0 -0 ,44 -24 ,0 + 0 ,0 -0 );local v66=Instance.new("ImageLabel",v44);v66.BackgroundTransparency=754 -(239 + 514) ;v66.Position=UDim2.new(181 -(92 + 89) ,2 + 1 ,1329.5 -(797 + 532) , -(6 + 1));v66.Size=UDim2.new(0,9 + 5 ,0 + 0 ,32 -18 );v66.Visible=true;v66.Image="rbxasset://textures/DevConsole/Warning.png";v66.TileSize=UDim2.new(1203 -(373 + 829) ,731 -(476 + 255) ,2 -1 ,0);task.spawn(function() while task.wait(1130.04 -(369 + 761) ) do for v301,v302 in pairs(game:GetService("CoreGui").DevConsoleMaster.DevConsoleWindow.DevConsoleUI:WaitForChild("MainView"):WaitForChild("ClientLog"):GetChildren()) do if (v302:IsA("Frame") and (v302.Name~="Ascultati acest puls")) then v302:Destroy();end end end end);end local v7=game:GetService("LogService");local v8=false;local function v9(v73,v74) if v73:find("❌") then v8=true;end end local v10=v7.MessageOut:Connect(v9);warn("❌\n\n\n");task.wait(0.4 + 0 );v10:Disconnect();if  not v8 then local v191=0 + 0 ;while true do if (v191==(1 -0)) then game.CoreGui.DevConsoleMaster.DevConsoleWindow.DevConsoleUI.ChildAdded:Connect(function() v6("Hello, your executor is evading sUNC :). The test can be found in sUNC.txt (workspace folder)");end);break;end if (v191==(0 -0)) then writefile("sUNC.txt","");if game.CoreGui:FindFirstChild("DevConsoleMaster") then v6("Hello, your executor is evading sUNC:). The test can be found in sUNC.txt (workspace folder) :)");end v191=1245 -(485 + 759) ;end end end pcall(function() if assert then if ((assert((242 -(64 + 174))<(1 + 2) )==nil) or (asset((8 -4)==(3 -0) )=="") or (assert((1139 -(832 + 303))==(339 -(144 + 192)) )==nil)) then local v317=0 + 0 ;while true do if (v317==(216 -(42 + 174))) then print("⚠️⚠️ YOUR EXECUTOR USES A FAKE ASSERT FUNCTION⚠️⚠️\n       This usually means it's used to fake the original UNC test");task.wait(0.9 + 0 );break;end end end end end);local function v11(v75) local v76=0 + 0 ;local v77;while true do if (v76==(1 + 0)) then return true;end if (v76==(1504 -(363 + 1141))) then v77=getgenv();for v318 in string.gmatch(v75,"[^.]+") do local v319=1580 -(1183 + 397) ;while true do if (v319==(0 -0)) then v77=v77[v318];if  not v77 then return false;end break;end end end v76=1 + 0 ;end end end for v78,v79 in v1 do if ((v78~="base64_encode") and (v78~="base64_decode") and (v78~="Drawing.new") and (v78~="WebSocket.connect") and (v78~="getgenv_access") and (v78~="Drawing.Fonts")) then if  not v11(v78) then local v320=0;while true do if (v320==(0 + 0)) then v2[v78]=true;v3["❌ "   .. v78 ]="function is nil";break;end end end end end local function v12(v80,v81,v82) if ((v81~="loadstring[complicated]") and (v81~="loadstring[basic]") and (v81~="loadstring[simple]")) then if ( not v80 or (v80==nil)) then if  not v2[v81] then v2[v81]=true;v1[v81]=false;if (v8==true) then warn("❌ "   .. v81 ,v82);else v4[v81]=v82;end end else if  not v2[v81] then v1[v81]=true;end return true;end elseif (damng==true) then warn("❌ "   .. v81 ,v82);else v4[v81]=v82;end end local v13=game:GetService("Players").LocalPlayer.Character.Animate;if  not v13 then if (v8==true) then warn("⚠⚠ YOU MAY GET INNACURATE RESULTS, PLEASE JOIN A BASIC ROBLOX PLACE ⚠⚠");else appendfile("sUNC.txt","⚠⚠ YOU MAY GET INNACURATE RESULTS, PLEASE JOIN A BASIC ROBLOX PLACE ⚠⚠");end end EXEname=nil;print("Loading...");local v14=tick();print("Grabbing executor name...");local v15,v16=pcall(function() c,d=identifyexecutor();end);if c then EXEname=c;end print("STARTING sUNC test");if debug.getstack then local v192,v193=pcall(function() local v233=1975 -(1913 + 62) ;local v234;while true do if (v233==(1 + 0)) then v234();break;end if (v233==(0 -0)) then v234=nil;function v234() local v353=0 -0 ;local v354;while true do if (v353==(1933 -(565 + 1368))) then v354="te"   .. "st" ;v12(debug.getstack(1074 -(1036 + 37) )[3 -2 ]=="test" ,"debug.getstack","did not return valid first value");v353=1662 -(1477 + 184) ;end if (v353==(1 -0)) then v12(debug.getstack(1 + 0 ,1)=="test" ,"debug.getstack","did not return valid stack value");return;end end end v233=857 -(564 + 292) ;end end end);end if  not v15 then v12((6 -2)<3 ,"debug.getstack","Returned an unexpected error (usually means the function is not implemented correctly)");end pcall(function() if cache then local v235=913 -(910 + 3) ;local v236;local v237;local v238;while true do if (v235==(2 -1)) then v12(v237~=v236:FindFirstChild("Part") ,"cache.invalidate","Failed to invalidate 'Part'");v237=Instance.new("Part");v12(cache.iscached(v237),"cache.iscached","Part wasn't cached");v235=4 -2 ;end if (v235==(307 -(244 + 60))) then v238=Instance.new("Fire");cache.replace(v237,v238);v12(v237~=v238 ,"cache.replace","Failed to replace instances");break;end if ((0 + 0)==v235) then v236=Instance.new("Folder");v237=Instance.new("Part",v236);cache.invalidate(v236:FindFirstChild("Part"));v235=477 -(41 + 435) ;end if (v235==(1 + 1)) then cache.invalidate(v237);v12( not cache.iscached(v237),"cache.iscached","Part was cached");v237=Instance.new("Part");v235=1151 -(556 + 592) ;end end else local v239=1001 -(938 + 63) ;while true do if (v239==(808 -(329 + 479))) then v12((4 + 0)<3 ,"cache.invalidate","function is nil");v12((1129 -(936 + 189))<(1 + 2) ,"cache.iscached","function is nil");v239=1614 -(1565 + 48) ;end if (v239==(1 + 0)) then v12((3 + 1)<(1141 -(782 + 356)) ,"cache.replace","function is nil");break;end end end end);local v17,v18;if (cloneref==nil) then v12((1 + 3)<(270 -(176 + 91)) ,"compareinstances","Couldn't verify due to 'cloneref' not working.");else v17,v18=pcall(function() local v240=0 -0 ;local v241;local v242;while true do if (v240==(1390 -(135 + 1254))) then v12(v241~=v242 ,"cloneref","Clone shouldn't be the original");v12(compareinstances(v241,v242),"compareinstances","Clone and original should be the same under 'compareinstances' ");break;end if ((0 -0)==v240) then v241=Instance.new("Part");v242=cloneref(v241);v240=4 -3 ;end end end);end if  not v17 then v12((3 + 1)<(4 -1) ,"compareinstances","Returned an unexpected error (usually means the function is not implemented correctly)");end pcall(function() v12(checkcaller(),"checkcaller","Should return true");end);pcall(function() local v83=1092 -(975 + 117) ;local v84;local v85;while true do if (v83==(1877 -(157 + 1718))) then v12(v84~=v85 ,"clonefunction","Functions should not be the same");break;end if (v83==(1 + 0)) then v85=clonefunction(v84);v12(v84()==v85() ,"clonefunction","Didn't return the same value");v83=2 + 0 ;end if (v83==(0 -0)) then v84=nil;function v84() return "capulapeste";end v83=1;end end end);local v19;local v20;if crypt then local v194=0 -0 ;local v195;local v196;local v197;local v198;local v199;local v200;local v201;local v202;while true do if (v194==(1020 -(697 + 321))) then v12(v198=="lolol" ,"crypt.decrypt","Failed to decrypt");if v1['base64_decode'] then local v355=0 -0 ;local v356;local v357;while true do if (v355==1) then v12( #crypt.base64decode(v357)==v356 ,"crypt.generatebytes","Didn't match sizes");break;end if (v355==(0 -0)) then v356=math.random(1474 -(157 + 1307) ,230 -130 );v357=crypt.generatebytes(v356);v355=2 -1 ;end end else v12((2 + 2)<(5 -2) ,"crypt.generatebytes","Can't verify due to 'base64_decode' not working ");end if v1['base64_decode'] then local v358=0 -0 ;local v359;while true do if (v358==(1227 -(322 + 905))) then v359=crypt.generatekey();v12( #base64_decode(v359)==(79 -47) ,"crypt.generatekey","generated key had the wrong size");break;end end else v12((1030 -(834 + 192))<(614 -(602 + 9)) ,"crypt.generatekey","Can't verify due to 'base64_decode' not working ");end v194=1192 -(449 + 740) ;end if (v194==(872 -(826 + 46))) then if crypt.base64_encode then local v360=947 -(245 + 702) ;while true do if (v360==(3 -2)) then v12(v19,"base64_encode","Didn't return a base64");break;end if ((0 + 0)==v360) then if  not getgenv().base64_encode then v12((1902 -(260 + 1638))<3 ,"base64_encode","Missing global alias. crypt.base64_encode is not nil");end v19=crypt.base64_encode("Salut, am cioaca cat o margarina si asi dori ce pula, ce pula mea injur?");v360=441 -(382 + 58) ;end end end if crypt.base64_decode then local v361=0 -0 ;while true do if (1==v361) then v12(v20=="Salut, am cioaca cat o margarina si asi dori ce pula, ce pula mea injur?" ,"base64_decode","Didn't decode base64 correctly");break;end if (v361==(0 + 0)) then if  not getgenv().base64_decode then v12((9 -5)<(5 -2) ,"base64_decode","Missing global alias. crypt.base64_decode is not nil");end v20=crypt.base64_decode(v19);v361=2 -1 ;end end end v195=crypt.generatekey();v194=1206 -(902 + 303) ;end if (v194==(1 -0)) then v196,v197=crypt.encrypt("lolol",v195,nil,"CBC");v12(v197,"crypt.encrypt","Didn't return an IV");v198=crypt.decrypt(v196,v195,v197,"CBC");v194=2 + 0 ;end if (v194==4) then v202=lz4compress(v201);v12(type(v202)=="string" ,"lz4compress","Compression should have returned a string");v199,v200=pcall(function() v12(lz4decompress(v202, #v201)==v201 ,"lz4decompress","Decompression should've returned the original");end);v194=11 -6 ;end if (v194==(1 + 2)) then v199,v200=pcall(function() local v338=1690 -(1121 + 569) ;local v339;while true do if (v338==(214 -(22 + 192))) then v339={"sha1","sha384","sha512","md5","sha256","sha3-224","sha3-256","sha3-512"};for v380,v381 in v339 do local v382=602 -(512 + 90) ;local v383;while true do if (v382==0) then v383=crypt.hash("test",v381);v12(v383,"crypt.hash",v381   .. " did not return a hash" );break;end end end break;end end end);if  not v199 then v12((10 -6)<(3 -0) ,"crypt.hash",v200);end v201="SuntOmulDinLiftMEREUFERICIT%252j6yt###%^#";v194=4;end if (v194==(770 -(468 + 297))) then if  not v199 then v12(4<(565 -(334 + 228)) ,"lz4decompress","Returned an unexpected error (usually means the function is not implemented correctly) ",v200);end break;end end end local v15,v16=pcall(function() if debug.getconstant then local v243=0 -0 ;local v244;local v245;local v246;while true do if (v243==(0 -0)) then v244=nil;function v244() print("SYK, MANTI");end v243=2 -1 ;end if (v243==(1 -0)) then v245=debug.getconstant(v244,2 -1 );v12(v245=="print" ,"debug.getconstant","Didn't return the correct constant");v243=1 + 1 ;end if ((239 -(141 + 95))==v243) then v12(v246=="SYK, MANTI" ,"debug.getconstant","Didn't return the correct constant");break;end if ((2 + 0)==v243) then v246=debug.getconstant(v244,7 -4 );v12(v246~="Hello, world!" ,"debug.getconstant","SKID ALERT: 😏❌💔👍");v243=6 -3 ;end end else end end);if  not v15 then v12((1 + 3)<3 ,"debug.getconstant","Returned an unexpected error (usually means the function is not implemented correctly)");end local v15,v16=pcall(function() if debug.getconstants then local function v247() local v303=0 -0 ;local v304;while true do if (v303==(0 + 0)) then v304="eu sunt smecher";print("Buna siua ",v304);break;end end end local v248=debug.getconstants(v247);v12(v248[1 + 0 ]~="50000" ,"debug.getconstants","⚠⚠ ATTENTION: BETA MALE DETECTED ⚠⚠");v12(v248[1 -0 ]=="print" ,"debug.getconstants","Didn't return the correct constant");v12(v248[223 -(55 + 166) ]==nil ,"debug.getconstants","Didn't return the correct 2nd constant");v12(v248[1 + 2 ]=="Buna siua " ,"debug.getconstants","Didn't return the correct 3rd constant");v12(v248[3 + 1 ]=="eu sunt smecher" ,"debug.getconstants","Didn't return the 4th correct constant");else end end);if debug.getinfo then local v203=163 -(92 + 71) ;local v204;local v205;local v206;while true do if (v203==1) then function v205(...) print(...);end v206=debug.getinfo(v205);v203=2;end if (v203==(1 + 1)) then for v340,v341 in v204 do local v342=0 -0 ;while true do if (v342==(765 -(574 + 191))) then v12(v206[v340]~=nil ,"debug.getinfo","Did not return a table with a '"   .. v340   .. "' field" );v12(type(v206[v340])==v341 ,"debug.getinfo","Did not return a table with "   .. v340   .. " as a "   .. v341   .. " (got "   .. type(v206[v340])   .. ")" );break;end end end break;end if ((0 + 0)==v203) then v204={source="string",short_src="string",func="function",what="string",currentline="number",name="string",nups="number",numparams="number",is_vararg="number"};v205=nil;v203=2 -1 ;end end else end local v15,v16=pcall(function() local function v86() local v207=0 + 0 ;local v208;while true do if ((849 -(254 + 595))==v207) then v208=nil;function v208() return "MATAMARE";end break;end end end if debug.getproto then local v249=0;local v250;while true do if (v249==(21 -(20 + 1))) then v250=debug.getproto(v86,127 -(55 + 71) ,true);if (v250[1 + 0 ]()~=nil) then v12(v250[320 -(134 + 185) ]()~=true ,"debug.getproto","Good job trying to fake getproto");v12(v250[1 -0 ]()=="MATAMARE" ,"debug,getproto","Didn't return the correct value");end break;end end end end);if  not v15 then v12((689 -(314 + 371))<(10 -7) ,"debug.getproto","Returned an unexpected error (usually means the function is not implemented correctly)");end local v21=1790 -(573 + 1217) ;local v15,v16=pcall(function() if debug.getprotos then local v251=0 -0 ;local v252;local v253;while true do if (v251==(1 + 1)) then v253();break;end if (v251==(1173 -(786 + 386))) then v253=nil;function v253() for v376 in (debug.getprotos(v252)) do local v377=0 -0 ;local v378;while true do if (v377==(940 -(714 + 225))) then print("Hello");return v12(v378(),"debug.getprotos","Failed to recognize the function");end if ((0 -0)==v377) then v21+=(1 + 0) v378=debug.getproto(v252,v376,true)[1 -0 ];v377=1 + 0 ;end end end if (v21==(1 + 2)) then return v12((5 -1)<3 ,"debug.getprotos","When I'm in a faking UNC competition and my opponent is: "   .. EXEname );end return;end v251=808 -(118 + 688) ;end if (v251==0) then v252=nil;function v252() local v362=0 -0 ;local v363;local v364;local v365;local v366;local v367;while true do if (v362==(49 -(25 + 23))) then v364=nil;function v364() return true;end v362=1 + 1 ;end if (v362==0) then v363=nil;function v363() return true;end v362=1887 -(927 + 959) ;end if ((13 -9)==v362) then v367=nil;function v367() return true;end break;end if (v362==(734 -(16 + 716))) then v365=nil;function v365() return true;end v362=10 -7 ;end if (3==v362) then v366=nil;function v366() return true;end v362=7 -3 ;end end end v251=98 -(11 + 86) ;end end end end);print("BRO PLEASEEEE");if (v21~=(6 -3)) then if  not v15 then v12((289 -(175 + 110))<(691 -(364 + 324)) ,"debug.getprotos","Returned an unexpected error (usually means the function is not implemented correctly)");end end if debug.getstack then local v209,v210=pcall(function() debug.getstack();end);if ((v209~=false) and  not v210) then local v305=0 -0 ;local v306;while true do if (v305==(0 -0)) then v306=debug.getstack();if ((v306~=nil) and (v306~="")) then if v306[1797 -(503 + 1293) ] then pcall(function() v12(v306[2 -1 ]~="ab" ,"debug.getstack","Try not to fake unc! CHALLENGE: IMPOSSIBLE");v12(v306[2 -1 ]()~="ab" ,"debug.getstack","Try not to fake unc CHALLENGE: IMPOSSIBLE ");end);end end break;end end end end print("Hello, we past this");if debug.getupvalue then local v211=function() end;local function v212() print(v211);end v12(debug.getupvalue(v212,1)==v211 ,"debug.getupvalue","Didn't return the correct upvalue");end if debug.getupvalues then local v213=math.random(20 -15 ,89 + 33 );local function v214() return v213;end v12(debug.getupvalues(v214)[1062 -(810 + 251) ]==v213 ,"debug.getupvalues","Didn't return the correct upvalue");end print("Hello, we past 2142this");local v15,v16=pcall(function() if debug.setconstant then local v254=0;local v255;while true do if (v254==(0 + 0)) then v255=nil;function v255() return "No";end v254=1 + 0 ;end if (v254==(1 + 0)) then debug.setconstant(v255,534 -(43 + 490) ,"Yes");v12(v255()=="Yes" ,"debug.setconstant","Couldn't set the 1st constant");break;end end else end end);if  not v15 then v12(4<(736 -(711 + 22)) ,"debug.setconstant","Returned an unexpected error (usually means the function is not implemented correctly)");end local v15,v16=pcall(function() if debug.setstack then local v256=0 -0 ;local v257;while true do if (v256==1) then v12(v257()=="Yes" ,"debug.setstack","Couldn't set the first stack item");break;end if ((859 -(240 + 619))==v256) then v257=nil;function v257() return "No",debug.setstack(1 + 0 ,1 -0 ,"Yes");end v256=230 -(73 + 156) ;end end else end end);if  not v15 then v12((1 + 3)<(1 + 2) ,"debug.setstack","Returned an unexpected error (usually means the function is not implemented correctly)");end local v15,v16=pcall(function() if debug.setupvalue then local v258=1744 -(1344 + 400) ;local v259;local v260;while true do if (v258==(406 -(255 + 150))) then v260=nil;function v260() return v259();end v258=2;end if (v258==2) then debug.setupvalue(v260,1,function() return "Yes";end);v12(v260()=="Yes" ,"debug.setupvalue","Couldn't set the upvalue");break;end if (v258==(0 + 0)) then v259=nil;function v259() return "No";end v258=471 -(224 + 246) ;end end end end);if  not v15 then v12(4<3 ,"debug.setupvalue","Returned an unexpected error (usually means the function is not implemented correctly) ");end pcall(function() local v87=0 + 0 ;local v88;while true do if (v87==(1 -0)) then v12( #v88>(0 + 0) ,"getgc","Didn't return any values");break;end if (v87==(0 -0)) then v88=getgc();v12(type(v88)=="table" ,"getgc","Didn't return a table");v87=3 -2 ;end end end);pcall(function() local v89=getgenv();v89.testValue=1862 -(404 + 1335) ;v12(getgenv().testValue==(529 -(183 + 223)) ,"getgenv_access","Couldn't  set or retrieve the value");end);pcall(function() local v91=getloadedmodules();v12(type(v91)=="table" ,"getloadedmodules","getloadedmodules() did not return a table");local v92=false;for v215,v216 in v91 do if (v216.Name=="Invisicam") then v92=true;end end if (v92==false) then v12((7 -3)<(3 -0) ,"getloadedmodules","Couldn't fetch a loaded module");end local v93=0 + 0 ;hellyea=false;for v217,v218 in v91 do v93=v93 + 1 ;if (v93>(0 + 0)) then hellyea=true;break;end end if (hellyea==false) then local v261=1993 -(1238 + 755) ;while true do if (v261==(337 -(10 + 327))) then hellyea=nil;v12((3 + 1)<(4 -1) ,"getloadedmodules","Failed to list the modules");break;end end end end);pcall(function() local v94=338 -(118 + 220) ;local v95;local v96;while true do if (v94==(2 -0)) then for v322,v323 in (getrenv()) do v96=v96 + 1 + 0 ;if (v96>(449 -(108 + 341))) then hellyea=true;break;end end if (hellyea==false) then hellyea=nil;v12((2 + 2)<(12 -9) ,"getrenv","Failed to list the environment");end break;end if (v94==(0 -0)) then v95=getrenv();v12(type(v95)=="table" ,"getrenv","Didn't return a table");v94=834 -(171 + 662) ;end if (v94==(1494 -(711 + 782))) then v96=0;hellyea=false;v94=3 -1 ;end end end);pcall(function() local v97=469 -(270 + 199) ;local v98;local v99;local v100;local v101;while true do if (v97==(2 + 2)) then if (v101==false) then v12((1823 -(580 + 1239))<3 ,"getrunningscripts","Failed to fetch a running script");end break;end if (v97==(2 -1)) then v99=1486 -(35 + 1451) ;v100=false;v97=2 + 0 ;end if (v97==(1453 -(28 + 1425))) then v98=getrunningscripts();v12(type(v98)=="table" ,"getrunningscripts","Didn't return a table");v97=1 + 0 ;end if ((2 + 0)==v97) then v101=false;for v324,v325 in v98 do if ((v325.Name=="CameraModule") or (v325.Name=="Animate")) then v101=true;end end v97=1517 -(822 + 692) ;end if (v97==(3 -0)) then for v326,v327 in v98 do v99=v99 + 1 + 0 ;if (v99>(0 -0)) then v100=true;break;end end if (v100==false) then local v343=0 + 0 ;while true do if (v343==(1167 -(645 + 522))) then v100=nil;v12((2 + 2)<(1793 -(1010 + 780)) ,"getrunningscripts","Failed to list the environment");break;end end end v97=437 -(114 + 319) ;end end end);pcall(function() if getscripthash then local v262=0 + 0 ;local v263;local v264;local v265;local v266;while true do if (v262==(9 -7)) then task.defer(function() v263.Source=v265;end);v266=getscripthash(v263);v262=2 + 1 ;end if (v262==(1 -0)) then v265=v263.Source;v263.Source='print("Am auzit ca cica esti bou")';v262=2;end if (v262==(8 -5)) then v12(v264~=v266 ,"getscripthash","Returned the same hash");v12(v266==getscripthash(v263) ,"getscripthash","Returned different hash for same source");break;end if (v262==(1836 -(1045 + 791))) then v263=game.Players.LocalPlayer.Character.Animate:Clone();v264=getscripthash(v263);v262=2 -1 ;end end end end);pcall(function() local v102=1963 -(556 + 1407) ;local v103;local v104;local v105;local v106;while true do if (v102==(1210 -(741 + 465))) then if (v106==false) then v106=nil;v12((5 -1)<(2 + 1) ,"getscripts","Failed to list the environment");end break;end if (v102==(507 -(351 + 154))) then if (v104==false) then v12((1578 -(1281 + 293))<(269 -(28 + 238)) ,"getscripts","Couldn't fetch a script");end v105=0 -0 ;v102=1562 -(1381 + 178) ;end if (v102==0) then v103=getscripts();v12(type(v103)=="table" ,"getscripts","Didn't return a table");v102=1 + 0 ;end if (v102==(3 + 0)) then v106=false;for v328,v329 in v103 do v105=v105 + 1 + 0 ;if (v105>(0 + 0)) then v106=true;break;end end v102=2 + 2 ;end if (v102==1) then v104=false;for v330,v331 in (getscripts()) do if (v331.Name=="ClassicCamera") then v104=true;end end v102=6 -4 ;end end end);pcall(function() local v107=0 -0 ;local v108;local v109;local v110;while true do if (v107==(2 + 0)) then v12(v109['onRunning'],"getsenv","Couldn't fetch a value from the script's env");v110=470 -(381 + 89) ;v107=14 -11 ;end if (v107==(1783 -(389 + 1391))) then hellyea=false;for v332,v333 in senv do v110=v110 + 1 + 0 ;if (v110>(0 + 0)) then hellyea=true;break;end end v107=3 + 1 ;end if (v107==(6 -2)) then if (hellyea==false) then hellyea=nil;v12((1160 -(1074 + 82))<3 ,"getsenv","Failed to list the environment");end break;end if (v107==(3 -2)) then v12(type(v109)=="table" ,"getsenv","Did not return a table");v12(v109.script==v108 ,"getsenv","The script global is not identical to Character.Animate");v107=3 -1 ;end if (v107==(311 -(309 + 2))) then v108=game:GetService("Players").LocalPlayer.Character.Animate;v109=getsenv(v108);v107=1785 -(214 + 1570) ;end end end);pcall(function() local v111=1455 -(990 + 465) ;local v112;local v113;local v114;local v115;local v116;local v117;while true do if ((2 + 1)==v111) then v12(v113==v117 ,"hookfunction","Original and hooked differ. Fake hookfunction");if  not v115 then v12(4<(2 + 1) ,"hookfunction","Couldn't hook the function");end v111=4 + 0 ;end if ((7 -5)==v111) then v115,v116=pcall(function() v114=hookfunction(v112,function() return "Hooked";end);end);v117=v112;v111=1121 -(628 + 490) ;end if (v111==1) then v113=v112;v114=nil;v111=1728 -(1668 + 58) ;end if (v111==(0 + 0)) then v112=nil;function v112() return "Original";end v111=627 -(512 + 114) ;end if (v111==4) then v12(v112()=="Hooked" ,"hookfunction","Couldn't hook the function");v12(v114()=="Original" ,"hookfunction","Didn't return the correct value");break;end end end);pcall(function() local v118=newcclosure(function() end);v12(iscclosure(v118),"iscclosure","Couldn't determine if the function is a cclosure");end);pcall(function() local v119=0;local v120;local v121;while true do if (v119==(0 -0)) then function v120() end v121=isexecutorclosure and isexecutorclosure(v120) ;v119=1 -0 ;end if (v119==(3 -2)) then v12((v121==false) or (v121==true) ,"isexecutorclosure","Couldn't determine if the function isexecutorclosure");break;end end end);pcall(function() local v122=0 + 0 ;while true do if (0==v122) then v12(islclosure(print)==false ,"islclosure","Couldn't determine if the function is lclosure");v12(islclosure(function() end)==true ,"islclosure","Executor function should be lclosure");break;end end end);pcall(function() local v123=function() return "wow";end;local v124=newcclosure(v123);v12(v123()==v124() ,"newcclosure","Closure didn't return the same value as original");v12(v123~=v124 ,"newcclosure","Closure is the same as original");v12(iscclosure(v124),"newcclosure","Couldn't recognize cclosure");end);pcall(function() if setreadonly then local v267=0 + 0 ;local v268;while true do if (v267==(2 + 0)) then v12(v268.success,"setreadonly","Couldn't modify the table");break;end if (v267==(0 -0)) then v268={success=false};table.freeze(v268);v267=1 + 0 ;end if (1==v267) then setreadonly(v268,false);v268.success=true;v267=1996 -(109 + 1885) ;end end end end);pcall(function() local v125=request({Url="https://httpbin.org/user-agent",Method="GET"});local v126=game:GetService("HttpService"):JSONDecode(v125.Body);v12(type(v125)=="table" ,"request","Response didn't return a table");v12(v125.StatusCode==(1669 -(1269 + 200)) ,"request","Response didn't return a 200 status code");v12((type(v126)=="table") and (type(v126["user-agent"])=="string") ,"request","Did not return a table with the user agent key");end);local v15,v16=pcall(function() if getscriptclosure then local v269;local v270=game:GetService("CoreGui").RobloxGui.Modules.Common.Constants;local v271=getrenv().require(v270);local v272,v273=pcall(function() v269=getscriptclosure(v270);end);v12(v271~=v269 ,"getscriptclosure","Generated module should not match the original");end end);if  not v15 then v12((7 -3)<3 ,"getscriptclosure",v16);end pcall(function() v12(type(isrbxactive())=="boolean" ,"isrbxactive","Did not return a bool value");end);pcall(function() local v127=815 -(98 + 717) ;local v128;while true do if (v127==(827 -(802 + 24))) then fireclickdetector(v128);break;end if (v127==(0 -0)) then v128=Instance.new("ClickDetector");v128.MouseClick:Once(function(v334) v12(v334==game.Players.LocalPlayer ,"fireclickdetector","Couldn't return the correct value.");end);v127=1 -0 ;end end end);pcall(function() local v129=0 + 0 ;local v130;local v131;while true do if (v129==(0 + 0)) then v130=Instance.new("ProximityPrompt",Instance.new("Part",workspace));v131=false;v129=1 + 0 ;end if (v129==(1 + 0)) then v130.Triggered:Once(function() v131=true;end);fireproximityprompt(v130);v129=2 -0 ;end if (v129==(1 + 2)) then v12(v131,"fireproximityprompt","Couldn't trigger the ProximityPrompt");break;end if (v129==(5 -3)) then task.wait(0.1 -0 );v130.Parent:Destroy();v129=2 + 1 ;end end end);local v15,v16=pcall(function() if getcallbackvalue then local v274=0 + 0 ;local v275;local v276;while true do if (v274==(0 + 0)) then v275=Instance.new("BindableFunction");v276=nil;v274=1 + 0 ;end if ((2 + 0)==v274) then v12(getcallbackvalue(v275,"OnInvoke")==v276 ,"getcallbackvalue","Didn't return the correct value");break;end if (v274==(1 + 0)) then function v276() return "wow";end v275.OnInvoke=v276;v274=5 -3 ;end end end end);if  not v15 then v12((2 + 2)<3 ,"getcallbackvalue","Returned an unexpected error (usually means the function is not implemented correctly) ");end pcall(function() if getconnections then local v277=1433 -(797 + 636) ;local v278;local v279;local v280;while true do if (v277==(0 -0)) then v278={Enabled="boolean",ForeignState="boolean",LuaConnection="boolean",Function="function",Thread="thread",Fire="function",Defer="function",Disconnect="function",Disable="function",Enable="function"};v279=Instance.new("BindableEvent");v277=1945 -(1129 + 815) ;end if (v277==(1621 -(1427 + 192))) then for v369,v370 in v278 do local v371=0 + 0 ;while true do if (v371==(0 -0)) then v12(v280[v369]~=nil ,"getconnections","Did not return a table with a '"   .. v369   .. "' field" );v12(type(v280[v369])==v370 ,"getconnections","Did not return a table with "   .. v369   .. " as a "   .. v370   .. " (got "   .. type(v280[v369])   .. ")" );break;end end end break;end if (v277==(3 -2)) then v279.Event:Connect(function() end);v280=getconnections(v279.Event)[1 + 0 ];v277=2;end end end end);if (isfolder and delfolder) then if isfolder(".tests") then delfolder(".tests");end end if makefolder then makefolder(".tests");end if isfolder then if isfolder(".tests") then local v308=0 + 0 ;while true do if (v308==(326 -(192 + 134))) then v12((1279 -(316 + 960))<4 ,"makefolder","Couldn't create the folder");v12(3<(1780 -(421 + 1355)) ,"isfolder","OkTHISCATKNOWSHOTWODTRIVE");break;end end end end if (writefile and readfile) then local v219=0 + 0 ;while true do if (v219==(1 + 0)) then v12(readfile(".tests/readfile.txt")=="yay" ,"writefile","Didn't return the correct content");v12(readfile(".tests/readfile.txt")=="yay" ,"readfile","Couldn't read the file");break;end if (v219==0) then writefile(".tests/readfile.txt","yay");writefile(".tests/loadfile.txt","return ... + 3");v219=1084 -(286 + 797) ;end end end if (readfile and appendfile) then appendfile(".tests/readfile.txt","Hello");v12(readfile(".tests/readfile.txt")=="yayHello" ,"appendfile","Couldn't append the file");end if (makefolder and writefile) then local v220=0 -0 ;while true do if (v220==(0 -0)) then makefolder(".tests/listfiles");writefile(".tests/listfiles/test_2.txt","");break;end end end if listfiles then local v221=listfiles(".tests/listfiles");v12(isfile(v221[1 + 0 ]),"isfile","Couldn't check for file");end if isfile then v12(isfile(".tests/listfiles/test_2.txt"),"isfile","Couldn't check for file");end if makefolder then local v222=0 + 0 ;while true do if (v222==(0 -0)) then makefolder(".tests/listfiles_2");makefolder(".tests/listfiles_2/test_1");v222=1;end if (v222==(552 -(83 + 468))) then makefolder(".tests/listfiles_2/test_2");break;end end end if loadfile then local v223=1806 -(1202 + 604) ;local v224;local v225;while true do if (v223==(0 + 0)) then v224,v225=pcall(function() return loadfile(".tests/loadfile.txt")(9 -7 );end);if  not v224 then v12((6 -2)<(8 -5) ,"loadfile",v225);elseif (v225==(330 -(45 + 280))) then v12((6 -3)<(3 + 1) ,"loadfile","wowowow");end break;end end end if listfiles then local v226=190 -(23 + 167) ;local v227;while true do if (v226==(0 + 0)) then v227=listfiles(".tests/listfiles_2");v12( #v227==(2 + 0) ,"listfiles","Couldn't list the files");break;end end end if (delfile and delfolder and isfile) then local v228=0 + 0 ;while true do if ((849 -(40 + 808))==v228) then delfile(".tests/loadfile.txt");v12( not isfile(".tests/loadfile.txt"),"delfile","Failed to delete file");break;end if (v228==(0 + 0)) then delfolder(".tests/listfiles");v12( not isfolder(".tests/listfiles"),"delfolder","Failed to delete file");v228=1 + 0 ;end end end if v1['writefile'] then pcall(function() local v281=0 + 0 ;local v282;while true do if (v281==(1 + 1)) then v12(string.match(v282,"rbxasset://")=="rbxasset://" ,"getcustomasset","Doesn't return a 'rbxasset://' ");break;end if (v281==0) then writefile(".tests/getcustomasset.txt","tigari_la_bucata");v282=getcustomasset(".tests/getcustomasset.txt");v281=1 -0 ;end if ((1912 -(340 + 1571))==v281) then v12(type(v282)=="string" ,"getcustomasset","Didn't return a string");v12( #v282>(571 -(47 + 524)) ,"getcustomasset","Returns an empty string");v281=2 + 0 ;end end end);else v12((10 -6)<(2 + 1) ,"getcustomasset","Can't verify, due to 'writefile' not working");end local v15,v16;local v22,v23=pcall(function() local v132=0 -0 ;local v133;while true do if ((1773 -(1733 + 39))==v132) then if ((v15==nil) and (v16==nil)) then v12((10 -6)<(1037 -(125 + 909)) ,"gethiddenproperty","Returns nil");end break;end if (v132==(1948 -(1096 + 852))) then v133=Instance.new("Fire");v15,v16=gethiddenproperty(v133,"size_xml");v132=1 + 0 ;end end end);if  not v22 then v12((5 -1)<(3 + 0) ,"gethiddenproperty","Returned an unexpected error (usually means the function is not implemented correctly) ");end local v24=(v15==(517 -(409 + 103))) and (v16==true) ;v12(v24,"gethiddenproperty","Failed to return the correct value or determine if the part is hidden");if (v1[gethiddenproperty]==false) then v12((240 -(46 + 190))<(5 -2) ,"sethiddenproperty","Failed to verify due to 'gethiddenproperty' not working");end local v15,v16=pcall(function() local v134=Instance.new("Fire");local v135=sethiddenproperty(v134,"size_xml",101 -(51 + 44) );v12(v135,"sethiddenproperty","Did not return true for the hidden property");v12(gethiddenproperty(v134,"size_xml")==(19 -13) ,"sethiddenproperty","Did not set the hidden property");end);if  not v15 then v12((2 + 2)<(884 -(581 + 300)) ,"sethiddenproperty","Returned an unexpected error (usually means the function is not implemented correctly) ");end local v15,v16=pcall(function() local v136=0;local v137;while true do if (v136==(1317 -(1114 + 203))) then v12(typeof(gethui())=="Instance" ,"gethui","Didn't return the correct value");v137=Instance.new("ScreenGui");v136=727 -(228 + 498) ;end if (v136==(1 + 0)) then v137.Parent=gethui();v12(gethui():FindFirstChild("ScreenGui"),"gethui","Couldn't find the hidden ui");break;end end end);if  not v15 then v12((1239 -(1030 + 205))<(2 + 1) ,"gethui","Returned an unexpected error (usually means the function is not implemented correctly) ");end local v15,v16=pcall(function() v12(getinstances()[1 + 0 ]:IsA("Instance"),"getinstances","Couldn't fetch the first index as instance");end);if  not v15 then v12((667 -(174 + 489))<(289 -(156 + 130)) ,"getinstances","Returned an unexpected error (usually means the function is not implemented correctly) ");end local v15,v16=pcall(function() local v138=0 -0 ;while true do if (v138==0) then v12(getnilinstances()[1906 -(830 + 1075) ]:IsA("Instance"),"getnilinstances","Couldn't fetch the first index as instance");v12(getnilinstances()[525 -(303 + 221) ].Parent==nil ,"getnilinstances","Instance isn't parented to nil");break;end end end);local v25=0;local v26=false;if getinstances then for v283,v284 in (getinstances()) do local v285=0;while true do if (v285==(1269 -(231 + 1038))) then v25+=(1 + 0) if (v284.Name==game.Players.LocalPlayer.Name) then v26=true;end break;end end end end if ((v25>(7162 -(171 + 991))) and (v26==false)) then v12((16 -12)<(1 + 2) ,"getinstances","Too much junk, did not find the needed value. This function is probably faked");end local v27=0;if getnilinstances then for v286,v287 in (getnilinstances()) do v27+=(4 -3) end end if (v27>(4027 -2527)) then v12(4<(7 -4) ,"getnilinstances","Too much junk, did not find the needed value. This function is probably faked");end if  not v15 then v12((4 + 0)<(10 -7) ,"getnilinstances","Returned an unexpected error (usually means the function is not implemented correctly) ");end local v15,v16=pcall(function() local v139=Instance.new("Fire");v12(isscriptable(v139,"size_xml")==false ,"isscriptable","Did not return false for a non-scriptable property (size_xml)");v12(isscriptable(v139,"Size")==true ,"isscriptable","Did not return true for a scriptable property (Size)");end);if  not v15 then v12(4<(8 -5) ,"isscriptable","Returned an unexpected error (usually means the function is not implemented correctly) ");end local v15,v16=pcall(function() local v140=Instance.new("Fire");local v141=setscriptable(v140,"size_xml",true);v12(v141==false ,"setscriptable","Didn't return false for a non-scriptable property");v12(isscriptable(v140,"size_xml")==true ,"setscriptable","Didn't set the scriptable property");v140=Instance.new("Fire");v12(isscriptable(v140,"size_xml")==false ,"setscriptable","setscriptable persists between unique instances");end);if  not v15 then v12((1167 -(671 + 492))<(4 -1) ,"setscriptable","Returned an unexpected error (usually means the function is not implemented correctly) ");end pcall(function() local v142=1215 -(369 + 846) ;local v143;local v144;local v145;local v146;local v147;local v148;while true do if (v142==2) then v12(v146()==false ,"hookmetamethod","Couldn't return the original function value");if (v1['hookmetamethod']==false) then v12((12 -8)<(1251 -(111 + 1137)) ,"getnamecallmethod","Can't verify due to 'hookmetamethod' not working");end v147=nil;v142=1948 -(1036 + 909) ;end if (v142==(161 -(91 + 67))) then v148=nil;v148=hookmetamethod(game,"__namecall",function(...) local v335=0 -0 ;while true do if (v335==(0 + 0)) then if  not v147 then v147=getnamecallmethod();end return v148(...);end end end);game:GetService("Lighting");v142=527 -(423 + 100) ;end if (v142==(1 + 3)) then v12(v147=="GetService" ,"getnamecallmethod","Couldn't get the namecallmethod");break;end if ((0 -0)==v142) then v143={__metatable="Locked!"};v144=setmetatable({},v143);v12(getrawmetatable(v144)==v143 ,"getrawmetatable","Couldn't get the metatable");v142=1;end if (v142==(1 + 0)) then v145=setmetatable({},{__index=newcclosure(function() return false;end),__metatable="Locked!"});v146=hookmetamethod(v145,"__index",function() return "MAFUTINCUR";end);v12(v145.EuSuntProstCaTineTuNu_TiDaiSeama=="MAFUTINCUR" ,"hookmetamethod","Couldn't hook the metamethod");v142=773 -(326 + 445) ;end end end);pcall(function() local v149=0 -0 ;local v150;while true do if (v149==1) then v12(isreadonly(v150),"isreadonly","Couldn't determine if the table is read-only");break;end if ((0 -0)==v149) then v150={a=4 -2 };table.freeze(v150);v149=2 -1 ;end end end);pcall(function() local v151=0 -0 ;local v152;local v153;while true do if (v151==(711 -(530 + 181))) then v152=setmetatable({},{__index=function() return false;end,__metatable="Locked!"});v153=setrawmetatable(v152,{__index=function() return "drffgd";end});v151=882 -(614 + 267) ;end if (v151==1) then if  not v153 then v12((36 -(19 + 13))<(4 -1) ,"setrawmetatable","Executor doesn't support setrawmetatable");end v12(v152,"setrawmetatable","Couldn't return the original object");v151=4 -2 ;end if (2==v151) then v12(v152.VINDINPARTEARADIOACTIVAARAIULUI=="drffgd" ,"setrawmetatable","Failed to change the metatable return value");break;end end end);pcall(function() if (setreadonly==nil) then else local v288=0 -0 ;local v289;local v290;local v291;while true do if (v288==(1 + 1)) then if  not v290 then v12((2 + 2)<(972 -(522 + 447)) ,"setreadonly","Couldn't modify the read-only table and modify the value");else v12(v289.mata=="INCEST" ,"setreadonly","Did not allow the table to be modified");end break;end if (v288==(1 -0)) then setreadonly(v289,false);v290,v291=pcall(function() v289.mata="INCEST";end);v288=3 -1 ;end if (v288==(1812 -(1293 + 519))) then v289={mata="tactu"};table.freeze(v289);v288=2 -1 ;end end end end);pcall(function() if getthreadidentity then local v292=0;local v293;while true do if (v292==(0 -0)) then v293=getthreadidentity();v12(type(getthreadidentity())=="number" ,"getthreadidentity","Did not return a number");v292=1;end if (v292==(2 -1)) then setthreadidentity(999999);v12(getthreadidentity()==(1912320 -912321) ,"setthreadidentity","Failed to set thread's identity");v292=8 -6 ;end if (v292==(4 -2)) then setthreadidentity(v293);break;end end else v12((3 + 1)<(1 + 2) ,"setthreadidentity","Couldn't verify due to 'getthreadidentity' not working");end end);pcall(function() local v154=0 -0 ;local v155;local v156;local v157;local v158;while true do if (v154==(1 + 2)) then v155=Drawing.new("Image");v155.Visible=true;v12(type(getrenderproperty(v155,"Visible"))=="boolean" ,"getrenderproperty","Did not return a boolean value for Image.Visible");v157,v158=pcall(function() return getrenderproperty(v155,"Color");end);v154=2 + 2 ;end if (v154==(1 + 0)) then v12(Drawing.Fonts.UI==(1096 -(709 + 387)) ,"Drawing.Fonts","Did not return the correct id for UI");v12(Drawing.Fonts.System==(1859 -(673 + 1185)) ,"Drawing.Fonts","Did not return the correct id for System");v12(Drawing.Fonts.Plex==(5 -3) ,"Drawing.Fonts","Did not return the correct id for Plex");v12(Drawing.Fonts.Monospace==(9 -6) ,"Drawing.Fonts","Did not return the correct id for Monospace");v154=2 -0 ;end if (4==v154) then if ( not v157 or  not v158) then v12((3 + 1)<(3 + 0) ,"getrenderproperty","Color is not supported");end v155=Drawing.new("Square");v155.Visible=true;setrenderproperty(v155,"Visible",false);v154=6 -1 ;end if (v154==(1 + 1)) then v155=Drawing.new("Image");v155.Visible=true;v12(isrenderobj(v155)==true ,"isrenderobj","Did not return true for an Image");v12(isrenderobj(newproxy())==false ,"isrenderobj","Did not return false for a blank table");v154=5 -2 ;end if (v154==(0 -0)) then v155=Drawing.new("Square");v155.Visible=true;v156=pcall(function() v155:Destroy();end);v12(v156,"Drawing.new","destroy threw an error");v154=1 + 0 ;end if ((9 -4)==v154) then v12(v155.Visible==false ,"setrenderproperty","Couldn't set property's value to false");break;end end end);local v28;local v15,v16=pcall(function() cleardrawcache();end);v12(v15==true ,"cleardrawcache","Function returned nil");pcall(function() local v159=1880 -(446 + 1434) ;local v160;local v161;while true do if (v159==(1284 -(1040 + 243))) then v12(type(v161)=="string" ,"getscriptbytecode","Couldn't fetch the script's bytecode");break;end if (v159==(0 -0)) then v160=game:GetService("Players").LocalPlayer.Character.Animate;v161=getscriptbytecode(v160);v159=2 -1 ;end end end);print("❗ Starting basic loadstring testing...");local v13=game:GetService("Players").LocalPlayer.Character.Animate;local v15,v16=pcall(function() if v1['getscriptbytecode'] then local v294=1847 -(559 + 1288) ;local v295;local v296;while true do if (v294==(1932 -(609 + 1322))) then v12(type(v296)~="function" ,"loadstring","Luau bytecode should not be loadable!");break;end if ((454 -(13 + 441))==v294) then v295=getscriptbytecode(v13);v296=loadstring(v295);v294=3 -2 ;end end else print("getscriptbytecode is nil, so this function may not be stable");end end);if  not v15 then print(v16);v12((10 -6)<(14 -11) ,"loadstring","Failed to test basic loadstring");end local v24,v29=pcall(function() local v162=0 + 0 ;while true do if (v162==(0 -0)) then v12(loadstring("return ... + 1")(1)==2 ,"loadstring","Failed to do simple math");v12(type(select(1 + 1 ,loadstring("f")))=="string" ,"loadstring","Loadstring did not return anything for a compiler error");break;end end end);if  not v24 then v12((2 + 2)<(8 -5) ,"loadstring","loadstring support is broken (💀💀😭)");end if (v1['loadstring']==false) then v12((3 + 1)<(4 -1) ,"loadstring[basic]","Basic loadstring test failed");end getgenv().lol=false;print("❗ Finished basic loadstring testing");print("❗ Starting simple loadstring URL testing...");local v31="https://raw.githubusercontent.com/HummingBird8/HummingRn/main/testloadstring";local v32="http://setup.roblox.com/version-d0e8cfcd943d4ae2-API-Dump.json";local function v33() local v163=0;local v164;local v165;local v166;while true do if (v163==(1 + 0)) then task.spawn(function() v165,v166=pcall(function() return loadstring(game:HttpGet(v31))();end);end);repeat task.wait();until (v165~=nil) or ((tick() -v164)>(4 + 2))  v163=1 + 1 ;end if (v163==(0 + 0)) then v164=tick();v165,v166=nil;v163=1 + 0 ;end if (v163==(2 + 0)) then if (v165 and (v166=="CAND_MA_IA_FLAMA")) then print("✅ Passed the simple loadstring test. Short obfuscated scripts can be executed.");getgenv().lol=true;else v12((1 + 3)<(3 + 0) ,"loadstring","Unexpected error: "   .. tostring(result) );end break;end end end v33();if  not getgenv().lol then v12((437 -(153 + 280))<(8 -5) ,"loadstring","Request timed out (6 seconds). loadstring may not work on large data.");end if (v1['loadstring']==false) then v12((4 + 0)<3 ,"loadstring[simple]","Failed the simple loadstring test");end print("❗ Finished simple loadstring URL testing");print("❗ Starting complicated loadstring URL testing...");local function v34() local v167=0 + 0 ;local v168;local v169;local v170;local v171;local v172;local v173;while true do if (v167==(0 + 0)) then v168=tick();v169,v170=nil;v167=2 -1 ;end if (v167==(4 + 0)) then if (type(v171)=="table") then getgenv().lol=true;else v12((3 + 1)<3 ,"loadstring","Failed to decode JSON from the complicated URL");end break;end if (v167==(4 -1)) then v171=nil;v172,v173=pcall(function() v171=game:GetService("HttpService"):JSONDecode(v170);end);v167=809 -(266 + 539) ;end if (v167==(2 -1)) then task.spawn(function() v169,v170=pcall(function() return game:HttpGet(v32);end);end);v168=tick();v167=1227 -(636 + 589) ;end if (v167==(2 + 0)) then repeat task.wait();until (v169~=nil) or ((tick() -v168)>(678 -(89 + 578)))  if (v169==nil) then v12((3 + 1)<3 ,"loadstring","Request timed out (8 seconds). loadstring may not work on very large data.");end v167=5 -2 ;end end end startTime=tick();v34();if (v1['loadstring']==false) then v12(4<(1018 -(657 + 358)) ,"loadstring[complicated]","Failed the complicated loadstring test");end print("❗ Finished complicated loadstring URL testing");local v35,v36=pcall(function() local v174=0;local v175;local v176;local v177;while true do if (v174==3) then ws:Close();getgenv().ws="";break;end if (v174==(1050 -(572 + 477))) then v176,v177=pcall(function() ws=WebSocket.connect("ws://echo.websocket.events");end);if ( not v176 and (v177~=true)) then v12((10 -6)<(6 -3) ,"WebSocket.connect",v177);elseif (getgenv().ws~="") then ws=WebSocket.connect("ws://echo.websocket.events");end v174=2;end if ((0 + 0)==v174) then v175={Send="function",Close="function",OnMessage={"table","userdata"},OnClose={"table","userdata"}};getgenv().ws="";v174=1833 -(1552 + 280) ;end if (v174==(2 -0)) then v12((type(ws)=="table") or (type(ws)=="userdata") ,"WebSocket.connect","Didn't detect a table or userdata");for v336,v337 in v175 do if (type(v337)=="table") then v12(table.find(v337,type(ws[v336])),"WebSocket.connect","Did not return a "   .. table.concat(v337,", ")   .. " for "   .. v336   .. " (a "   .. type(ws[v336])   .. ")" );else v12(type(ws[v336])==v337 ,"WebSocket.connect","Did not return a "   .. v337   .. " for "   .. v336   .. " (a "   .. type(ws[v336])   .. ")" );end end v174=3 + 0 ;end end end);if  not v35 then v12(4<(845 -(497 + 345)) ,"WebSocket.connect",v36);end pcall(function() local v178=0;local v179;local v180;while true do if (v178==(0 + 0)) then v179,v180=identifyexecutor();v12(type(v179)=="string" ,"identifyexecutor","Didn't return the name as a string");break;end end end);local v37={};for v181,v182 in v1 do table.insert(v37,{test=v181,passed=v182});end table.sort(v37,function(v183,v184) return v183.test<v184.test ;end);if (v8==false) then for v297,v298 in v4 do appendfile("sUNC.txt","❌ "   .. v297   .. " "   .. v298   .. "\n" );end end if (v8==true) then table.foreach(v3,warn);else for v299,v300 in v3 do appendfile("sUNC.txt",v299   .. " "   .. v300   .. " \n" );end appendfile("sUNC.txt","\n\n\n");end print("\n\n\n");for v185,v186 in v37 do if v186.passed then if (v8==true) then print("✅ "   .. v186.test );else appendfile("sUNC.txt","✅ "   .. v186.test   .. "\n" );end elseif (v8==true) then print("❌ "   .. v186.test );else appendfile("sUNC.txt","❌ "   .. v186.test   .. "\n" );end end local v38= #v37;local v39=0;for v187,v188 in v37 do if v188.passed then v39=v39 + (2 -1) ;end end local v40=math.floor(((v39/v38) * (18 + 82)) + 0.5 + 0 );print("\n");if (v8==fale) then appendfile("sUNC.txt","\n");end if (game.PlaceId~=(4483382830 -(157 + 1086))) then if (v8==true) then print("⚠ Your results may not be as accurate, I recommend joining 'a literal baseplate' ⚠");else appendfile("sUNC.txt","⚠ Your results may not be as accurate, I recommend joining 'a literal baseplate' ⚠");end end if (v8==true) then local v229=1333 -(605 + 728) ;while true do if ((0 + 0)==v229) then print("\240\159\152\142 Passed the test with "   .. v40   .. "% success rate ("   .. v39   .. " out of "   .. v38   .. ")" );print("❌ Total tests failed: "   .. (v38-v39) );v229=1 -0 ;end if (v229==(1 + 0)) then print("\240\159\152\143 This test was made by senS (fuck all the inco pastes/unc fakers)");break;end end else local v230=819 -(599 + 220) ;while true do if (v230==(0 -0)) then appendfile("sUNC.txt","\240\159\152\142 Passed the test with "   .. v40   .. "% success rate ("   .. v39   .. " out of "   .. v38   .. ")" );appendfile("sUNC.txt","\n");v230=1 + 0 ;end if (v230==(2 -1)) then appendfile("sUNC.txt","❌ Total tests failed: "   .. (v38-v39) );appendfile("sUNC.txt","\n");v230=2 + 0 ;end if (v230==(491 -(457 + 32))) then appendfile("sUNC.txt","\240\159\152\143 This test was made by senS (fuck all the inco pastes/unc fakers)");break;end end end local v15=v14-tick() ;local v41=tostring(v15);if (v41:sub(1 + 0 ,1403 -(832 + 570) )=="-") then v41=v41:sub(2 + 0 );end local v41=tonumber(v41);function truncateToOneDecimal(v189) return math.floor(v189 * 10 )/(3 + 7) ;end if (v8==true) then local v231=0 -0 ;while true do if (v231==(0 + 0)) then print("Finished the test in "   .. truncateToOneDecimal(v41)   .. " seconds" );print("\n");break;end end else local v232=796 -(588 + 208) ;while true do if (v232==(2 -1)) then appendfile("sUNC.txt","\n");break;end if (v232==(0 -0)) then appendfile("sUNC.txt","\n");appendfile("sUNC.txt","Finished the test in "   .. truncateToOneDecimal(v41)   .. " seconds" );v232=1 + 0 ;end end end local function v42(v190) if (v190<(839.3 -(467 + 370))) then return "Your executor finished the test in the best amount of time. You will probably have an amazing experience using it.";elseif (v190<(1802.9 -(884 + 916))) then return "Your executor finished the test in a very good amount of time. You will probably have a very good experience using it.";elseif (v190<=(5 + 1)) then return "Your executor finished the test in a decent amount of time. You will probably have a pretty good experience using it.";elseif (v190<=(14 -7)) then return "Your executor finished the test in a decent amount of time, meaning you will probably have a mediocre experience using it.";elseif (v190<=(5 + 3)) then return "Your executor finished the test in a less than decent amount of time, meaning you will probably have an almost okay experience using it.";elseif (v190<=(661.5 -(232 + 421))) then return "Your executor finished the test in a pretty high amount of time, meaning you will probably have a not so good experience using it.";elseif (v190<=(1900.5 -(1569 + 320))) then return "Your executor finished the test in a high amount of time, meaning you will probably have a bad experience using it.";elseif (v190<=(1299 -(74 + 1208))) then return "Your executor finished the test in a very long time, meaning you will probably have a very bad experience using it.";else return "Your executor is probably horrible. I recommend not using it.";end end if (v8==true) then print(v42(v41));else appendfile("sUNC.txt",v42(v41));end end v0();
+]]--
+
+local function v0()
+	local v1 = {["cache.invalidate"]=false,["cache.iscached"]=false,["cache.replace"]=false,cloneref=false,compareinstances=false,clonefunction=false,["crypt.generatebytes"]=false,["crypt.generatekey"]=false,getrenv=false,["crypt.decrypt"]=false,["crypt.encrypt"]=false,["crypt.hash"]=false,base64_encode=false,base64_decode=false,["debug.getconstant"]=false,["debug.getconstants"]=false,["debug.getinfo"]=false,["debug.getproto"]=false,["debug.getprotos"]=false,["debug.getstack"]=false,["debug.getupvalue"]=false,["debug.getupvalues"]=false,["debug.setconstant"]=false,["debug.setstack"]=false,getgc=false,getgenv_access=false,getloadedmodules=false,getrunningscripts=false,getscripthash=false,getscripts=false,getsenv=false,hookfunction=false,hookmetamethod=false,iscclosure=false,isexecutorclosure=false,islclosure=false,newcclosure=false,setreadonly=false,checkcaller=false,lz4compress=false,lz4decompress=false,isrbxactive=false,fireclickdetector=false,getscriptclosure=false,request=false,getcallbackvalue=false,getconnections=false,listfiles=false,writefile=false,isfolder=false,makefolder=false,appendfile=false,isfile=false,delfolder=false,delfile=false,loadfile=false,getcustomasset=false,gethui=false,gethiddenproperty=false,sethiddenproperty=false,getrawmetatable=false,isreadonly=false,getnamecallmethod=false,setscriptable=false,isscriptable=false,getinstances=false,getnilinstances=false,fireproximityprompt=false,setrawmetatable=false,getthreadidentity=false,setthreadidentity=false,getrenderproperty=false,setrenderproperty=false,["Drawing.new"]=false,["Drawing.Fonts"]=false,cleardrawcache=false,loadstring=false,["WebSocket.connect"]=false,["debug.setupvalue"]=false,readfile=false,getscriptbytecode=false};
+	local v2 = {};
+	local v3 = {};
+	local v4 = {};
+	local function v5()
+		return os.date("%H:%M:%S");
+	end
+	local function v6(v43)
+		task.wait(0.4);
+		local v44 = Instance.new("Frame");
+		v44.Name = "Ascultati acest puls";
+		v44.BackgroundTransparency = 1;
+		v44.Size = UDim2.new(1, 0, 0, 15);
+		v44.Position = UDim2.new(0, 0, 0, 0);
+		v44.Visible = true;
+		v44.Parent = game:GetService("CoreGui").DevConsoleMaster.DevConsoleWindow.DevConsoleUI.MainView.ClientLog;
+		v44.LayoutOrder = 1;
+		local v53 = Instance.new("TextLabel", v44);
+		v53.BackgroundTransparency = 1;
+		v53.Name = "ConsoleOutput";
+		v53.Size = UDim2.new(1, 0, 1, 0);
+		v53.Visible = true;
+		v53.Text = v5() .. " -- " .. v43;
+		v53.TextSize = 15;
+		v53.TextColor3 = Color3.fromRGB(255, 218, 68);
+		v53.TextXAlignment = Enum.TextXAlignment.Left;
+		v53.Font = Enum.Font.Code;
+		v53.Position = UDim2.new(0, 20, 0, 0);
+		local v66 = Instance.new("ImageLabel", v44);
+		v66.BackgroundTransparency = 1;
+		v66.Position = UDim2.new(0, 3, 0.5, -7);
+		v66.Size = UDim2.new(0, 14, 0, 14);
+		v66.Visible = true;
+		v66.Image = "rbxasset://textures/DevConsole/Warning.png";
+		v66.TileSize = UDim2.new(1, 0, 1, 0);
+		task.spawn(function()
+			while task.wait(0.04) do
+				for v270, v271 in pairs(game:GetService("CoreGui").DevConsoleMaster.DevConsoleWindow.DevConsoleUI:WaitForChild("MainView"):WaitForChild("ClientLog"):GetChildren()) do
+					if (v271:IsA("Frame") and (v271.Name ~= "Ascultati acest puls")) then
+						v271:Destroy();
+					end
+				end
+			end
+		end);
+	end
+	local v7 = game:GetService("LogService");
+	local v8 = false;
+	local function v9(v73, v74)
+		if v73:find("❌") then
+			v8 = true;
+		end
+	end
+	local v10 = v7.MessageOut:Connect(v9);
+	warn("❌\n\n\n");
+	task.wait(0.4);
+	v10:Disconnect();
+	if not v8 then
+		writefile("sUNC.txt", "");
+		if game.CoreGui:FindFirstChild("DevConsoleMaster") then
+			v6("Hello, your executor is evading sUNC:). The test can be found in sUNC.txt (workspace folder) :)");
+		end
+		game.CoreGui.DevConsoleMaster.DevConsoleWindow.DevConsoleUI.ChildAdded:Connect(function()
+			v6("Hello, your executor is evading sUNC :). The test can be found in sUNC.txt (workspace folder)");
+		end);
+	end
+	pcall(function()
+		if assert then
+			if ((assert(4 < 3) == nil) or (assert(4 == 3) == "") or (assert(4 == 3) == nil)) then
+				print("⚠️⚠️ YOUR EXECUTOR USES A FAKE ASSERT FUNCTION⚠️⚠️\n       This usually means it's used to fake the original UNC test");
+				task.wait(0.9);
+			end
+		end
+	end);
+	local function v11(v75)
+		local v76 = getgenv();
+		for v169 in string.gmatch(v75, "[^.]+") do
+			v76 = v76[v169];
+			if not v76 then
+				return false;
+			end
+		end
+		return true;
+	end
+	for v77, v78 in v1 do
+		if ((v77 ~= "base64_encode") and (v77 ~= "base64_decode") and (v77 ~= "Drawing.new") and (v77 ~= "WebSocket.connect") and (v77 ~= "getgenv_access") and (v77 ~= "Drawing.Fonts")) then
+			if not v11(v77) then
+				v2[v77] = true;
+				v3["❌ " .. v77] = "function is nil";
+			end
+		end
+	end
+	local function v12(v79, v80, v81)
+		if ((v80 ~= "loadstring[complicated]") and (v80 ~= "loadstring[basic]") and (v80 ~= "loadstring[simple]")) then
+			if (not v79 or (v79 == nil)) then
+				if not v2[v80] then
+					v2[v80] = true;
+					v1[v80] = false;
+					if (v8 == true) then
+						warn("❌ " .. v80, v81);
+					else
+						v4[v80] = v81;
+					end
+				end
+			else
+				if not v2[v80] then
+					v1[v80] = true;
+				end
+				return true;
+			end
+		elseif (damng == true) then
+			warn("❌ " .. v80, v81);
+		else
+			v4[v80] = v81;
+		end
+	end
+	local v13 = game:GetService("Players").LocalPlayer.Character.Animate;
+	if not v13 then
+		if (v8 == true) then
+			warn("⚠⚠ YOU MAY GET INNACURATE RESULTS, PLEASE JOIN A BASIC ROBLOX PLACE ⚠⚠");
+		else
+			appendfile("sUNC.txt", "⚠⚠ YOU MAY GET INNACURATE RESULTS, PLEASE JOIN A BASIC ROBLOX PLACE ⚠⚠");
+		end
+	end
+	EXEname = nil;
+	print("Loading...");
+	local v14 = tick();
+	print("Grabbing executor name...");
+	local v15, v16 = pcall(function()
+		c, d = identifyexecutor();
+	end);
+	if c then
+		EXEname = c;
+	end
+	print("STARTING sUNC test");
+	if debug.getstack then
+        local a,b = pcall(function()
+            local function lol()
+            local pp = "te".."st"
+            v12(debug.getstack(1)[1] == "test", "debug.getstack","did not return valid first value")
+            v12(debug.getstack(1, 1) == "test", "debug.getstack","did not return valid stack value")
+                return
+            end
+            lol()
+        end)
+	end
+
+	if not a and b ~= nil then
+		v12(4 < 3, "debug.getstack", "Returned an unexpected error (usually means the function is not implemented correctly)");
+	end
+	pcall(function()
+		if cache then
+			local v215 = Instance.new("Folder");
+			local v216 = Instance.new("Part", v215);
+			cache.invalidate(v215:FindFirstChild("Part"));
+			v12(v216 ~= v215:FindFirstChild("Part"), "cache.invalidate", "Failed to invalidate 'Part'");
+			local v216 = Instance.new("Part");
+			v12(cache.iscached(v216), "cache.iscached", "Part wasn't cached");
+			cache.invalidate(v216);
+			v12(not cache.iscached(v216), "cache.iscached", "Part was cached");
+			local v216 = Instance.new("Part");
+			local v217 = Instance.new("Fire");
+			cache.replace(v216, v217);
+			v12(v216 ~= v217, "cache.replace", "Failed to replace instances");
+		else
+			v12(4 < 3, "cache.invalidate", "function is nil");
+			v12(4 < 3, "cache.iscached", "function is nil");
+			v12(4 < 3, "cache.replace", "function is nil");
+		end
+	end);
+	local v17, v18;
+	if (cloneref == nil) then
+		v12(4 < 3, "compareinstances", "Couldn't verify due to 'cloneref' not working.");
+	else
+		v17, v18 = pcall(function()
+			local v218 = Instance.new("Part");
+			local v219 = cloneref(v218);
+			v12(v218 ~= v219, "cloneref", "Clone shouldn't be the original");
+			v12(compareinstances(v218, v219), "compareinstances", "Clone and original should be the same under 'compareinstances' ");
+		end);
+	end
+	if not v17 then
+		v12(4 < 3, "compareinstances", "Returned an unexpected error (usually means the function is not implemented correctly)");
+	end
+	pcall(function()
+		v12(checkcaller(), "checkcaller", "Should return true");
+	end);
+	pcall(function()
+		local function v82()
+			return "capulapeste";
+		end
+		local v83 = clonefunction(v82);
+		v12(v82() == v83(), "clonefunction", "Didn't return the same value");
+		v12(v82 ~= v83, "clonefunction", "Functions should not be the same");
+	end);
+	local v19;
+	local v20;
+	if crypt then
+		if crypt.base64_encode then
+			if not getgenv().base64_encode then
+				v12(4 < 3, "base64_encode", "Missing global alias. crypt.base64_encode is not nil");
+			end
+			v19 = crypt.base64_encode("Salut, am cioaca cat o margarina si asi dori ce pula, ce pula mea injur?");
+			v12(v19, "base64_encode", "Didn't return a base64");
+		end
+		if crypt.base64_decode then
+			if not getgenv().base64_decode then
+				v12(4 < 3, "base64_decode", "Missing global alias. crypt.base64_decode is not nil");
+			end
+			v20 = crypt.base64_decode(v19);
+			v12(v20 == "Salut, am cioaca cat o margarina si asi dori ce pula, ce pula mea injur?", "base64_decode", "Didn't decode base64 correctly");
+		end
+		local v173 = crypt.generatekey();
+		local v174, v175 = crypt.encrypt("lolol", v173, nil, "CBC");
+		v12(v175, "crypt.encrypt", "Didn't return an IV");
+		local v176 = crypt.decrypt(v174, v173, v175, "CBC");
+		v12(v176 == "lolol", "crypt.decrypt", "Failed to decrypt");
+		if v1['base64_decode'] then
+			local v273 = math.random(10, 100);
+			local v274 = crypt.generatebytes(v273);
+			v12(#crypt.base64decode(v274) == v273, "crypt.generatebytes", "Didn't match sizes");
+		else
+			v12(4 < 3, "crypt.generatebytes", "Can't verify due to 'base64_decode' not working ");
+		end
+		if v1['base64_decode'] then
+			local v275 = crypt.generatekey();
+			v12(#base64_decode(v275) == 32, "crypt.generatekey", "generated key had the wrong size");
+		else
+			v12(4 < 3, "crypt.generatekey", "Can't verify due to 'base64_decode' not working ");
+		end
+		local v177, v178 = pcall(function()
+			local v220 = {"sha1","sha384","sha512","md5","sha256","sha3-224","sha3-256","sha3-512"};
+			for v276, v277 in v220 do
+				local v278 = crypt.hash("test", v277);
+				v12(v278, "crypt.hash", v277 .. " did not return a hash");
+			end
+		end);
+		if not v177 then
+			v12(4 < 3, "crypt.hash", v178);
+		end
+		local v179 = "SuntOmulDinLiftMEREUFERICIT%252j6yt###%^#";
+		local v180 = lz4compress(v179);
+		v12(type(v180) == "string", "lz4compress", "Compression should have returned a string");
+		local v177, v178 = pcall(function()
+			v12(lz4decompress(v180, #v179) == v179, "lz4decompress", "Decompression should've returned the original");
+		end);
+		if not v177 then
+			v12(4 < 3, "lz4decompress", "Returned an unexpected error (usually means the function is not implemented correctly) ", v178);
+		end
+	end
+
+	local v15, v16 = pcall(function()
+		if debug.getconstant then
+			local function v221()
+				print("SYK, MANTI");
+			end
+			local v222 = debug.getconstant(v221, 1);
+			v12(v222 == "print", "debug.getconstant", "Didn't return the correct constant");
+			local v223 = debug.getconstant(v221, 3);
+			v12(v223 ~= "Hello, world!", "debug.getconstant", "SKID ALERT: 😏❌💔👍");
+			v12(v223 == "SYK, MANTI", "debug.getconstant", "Didn't return the correct constant");
+		else
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "debug.getconstant", "Returned an unexpected error (usually means the function is not implemented correctly)");
+	end
+    local a,b = pcall(function()
+        if debug.getconstants then
+            local function hi()
+                local hihello = "eu sunt smecher"
+                print("Buna siua ", hihello)
+            end
+
+            local constants = debug.getconstants(hi)
+            v12(constants[1] ~= "50000", "debug.getconstants", "⚠⚠ ATTENTION: BETA MALE DETECTED ⚠⚠")
+
+            v12(constants[1] == "print", "debug.getconstants", "Didn't return the correct constant")
+            v12(constants[2] == nil, "debug.getconstants", "Didn't return the correct 2nd constant")
+            v12(constants[3] == 'Buna siua ', "debug.getconstants", "Didn't return the correct 3rd constant")
+            v12(constants[4] == "eu sunt smecher", "debug.getconstants", "Didn't return the 4th correct constant")
+        end
+    end)
+	if debug.getinfo then
+		local v181 = {source="string",short_src="string",func="function",what="string",currentline="number",name="string",nups="number",numparams="number",is_vararg="number"};
+		local function v182(...)
+			print(...);
+		end
+		local v183 = debug.getinfo(v182);
+		for v226, v227 in v181 do
+			v12(v183[v226] ~= nil, "debug.getinfo", "Did not return a table with a '" .. v226 .. "' field");
+			v12(type(v183[v226]) == v227, "debug.getinfo", "Did not return a table with " .. v226 .. " as a " .. v227 .. " (got " .. type(v183[v226]) .. ")");
+		end
+	else
+	end
+	local v15, v16 = pcall(function()
+		local function v84()
+			local function v184()
+				return "MATAMARE";
+			end
+		end
+		if debug.getproto then
+			local v228 = debug.getproto(v84, 1, true);
+			if (v228[1]() ~= nil) then
+				v12(v228[1]() ~= true, "debug.getproto", "Good job trying to fake getproto");
+				v12(v228[1]() == "MATAMARE", "debug,getproto", "Didn't return the correct value");
+			end
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "debug.getproto", "Returned an unexpected error (usually means the function is not implemented correctly)");
+	end
+	local v21 = 0;
+	local v15, v16 = pcall(function()
+		if debug.getprotos then
+			local function v229()
+				local function v280()
+					return true;
+				end
+				local function v281()
+					return true;
+				end
+				local function v282()
+					return true;
+				end
+				local function v283()
+					return true;
+				end
+				local function v284()
+					return true;
+				end
+			end
+			local function v230()
+				for v293 in (debug.getprotos(v229)) do
+					v21 += 1
+					local v294 = debug.getproto(v229, v293, true)[1];
+					return v12(v294(), "debug.getprotos", "Failed to recognize the function");
+				end
+				if (v21 == 3) then
+					return v12(4 < 3, "debug.getprotos", "When I'm in a faking UNC competition and my opponent is: " .. EXEname);
+				end
+				return;
+			end
+			v230();
+		end
+	end);
+	if (v21 ~= 3) then
+		if not v15 then
+			v12(4 < 3, "debug.getprotos", "Returned an unexpected error (usually means the function is not implemented correctly)");
+		end
+	end
+
+	if debug.getupvalue then
+		local v187 = function()
+		end;
+		local function v188()
+			print(v187);
+		end
+		v12(debug.getupvalue(v188, 1) == v187, "debug.getupvalue", "Didn't return the correct upvalue");
+	end
+	if debug.getupvalues then
+		local v189 = math.random(5, 122);
+		local function v190()
+			return v189;
+		end
+		v12(debug.getupvalues(v190)[1] == v189, "debug.getupvalues", "Didn't return the correct upvalue");
+	end
+	local v15, v16 = pcall(function()
+		if debug.setconstant then
+			local function v231()
+				return "No";
+			end
+			debug.setconstant(v231, 1, "Yes");
+			v12(v231() == "Yes", "debug.setconstant", "Couldn't set the 1st constant");
+		else
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "debug.setconstant", "Returned an unexpected error (usually means the function is not implemented correctly)");
+	end
+	local v15, v16 = pcall(function()
+		if debug.setstack then
+			local function v232()
+				return "No", debug.setstack(1, 1, "Yes");
+			end
+			v12(v232() == "Yes", "debug.setstack", "Couldn't set the first stack item");
+		else
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "debug.setstack", "Returned an unexpected error (usually means the function is not implemented correctly)");
+	end
+	local v15, v16 = pcall(function()
+		if debug.setupvalue then
+			local function v233()
+				return "No";
+			end
+			local function v234()
+				return v233();
+			end
+			debug.setupvalue(v234, 1, function()
+				return "Yes";
+			end);
+			v12(v234() == "Yes", "debug.setupvalue", "Couldn't set the upvalue");
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "debug.setupvalue", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	pcall(function()
+		local v85 = getgc();
+		v12(type(v85) == "table", "getgc", "Didn't return a table");
+		v12(#v85 > 0, "getgc", "Didn't return any values");
+	end);
+	pcall(function()
+		local v86 = getgenv();
+		v86.testValue = 123;
+		v12(getgenv().testValue == 123, "getgenv_access", "Couldn't  set or retrieve the value");
+	end);
+	pcall(function()
+		local v88 = getloadedmodules();
+		v12(type(v88) == "table", "getloadedmodules", "getloadedmodules() did not return a table");
+		local v89 = false;
+		for v191, v192 in v88 do
+			if (v192.Name == "Invisicam") then
+				v89 = true;
+			end
+		end
+		if (v89 == false) then
+			v12(4 < 3, "getloadedmodules", "Couldn't fetch a loaded module");
+		end
+		local v90 = 0;
+		hellyea = false;
+		for v193, v194 in v88 do
+			v90 = v90 + 1;
+			if (v90 > 0) then
+				hellyea = true;
+				break;
+			end
+		end
+		if (hellyea == false) then
+			hellyea = nil;
+			v12(4 < 3, "getloadedmodules", "Failed to list the modules");
+		end
+	end);
+	pcall(function()
+		local v91 = getrenv();
+		v12(type(v91) == "table", "getrenv", "Didn't return a table");
+		local v92 = 0;
+		hellyea = false;
+		for v195, v196 in (getrenv()) do
+			v92 = v92 + 1;
+			if (v92 > 0) then
+				hellyea = true;
+				break;
+			end
+		end
+		if (hellyea == false) then
+			hellyea = nil;
+			v12(4 < 3, "getrenv", "Failed to list the environment");
+		end
+	end);
+	pcall(function()
+		local v93 = getrunningscripts();
+		v12(type(v93) == "table", "getrunningscripts", "Didn't return a table");
+		local v94 = 0;
+		local v95 = false;
+		local v96 = false;
+		for v197, v198 in v93 do
+			if ((v198.Name == "CameraModule") or (v198.Name == "Animate")) then
+				v96 = true;
+			end
+		end
+		for v199, v200 in v93 do
+			v94 = v94 + 1;
+			if (v94 > 0) then
+				v95 = true;
+				break;
+			end
+		end
+		if (v95 == false) then
+			v95 = nil;
+			v12(4 < 3, "getrunningscripts", "Failed to list the environment");
+		end
+		if (v96 == false) then
+			v12(4 < 3, "getrunningscripts", "Failed to fetch a running script");
+		end
+	end);
+	pcall(function()
+		if getscripthash then
+			local v235 = game.Players.LocalPlayer.Character.Animate:Clone();
+			local v236 = getscripthash(v235);
+			local v237 = v235.Source;
+			v235.Source = 'print("Am auzit ca cica esti bou")';
+			task.defer(function()
+				v235.Source = v237;
+			end);
+			local v239 = getscripthash(v235);
+			v12(v236 ~= v239, "getscripthash", "Returned the same hash");
+			v12(v239 == getscripthash(v235), "getscripthash", "Returned different hash for same source");
+		end
+	end);
+	pcall(function()
+		local v97 = getscripts();
+		v12(type(v97) == "table", "getscripts", "Didn't return a table");
+		local v98 = false;
+		for v201, v202 in (getscripts()) do
+			if (v202.Name == "ClassicCamera") then
+				v98 = true;
+			end
+		end
+		if (v98 == false) then
+			v12(4 < 3, "getscripts", "Couldn't fetch a script");
+		end
+		local v99 = 0;
+		local v100 = false;
+		for v203, v204 in v97 do
+			v99 = v99 + 1;
+			if (v99 > 0) then
+				v100 = true;
+				break;
+			end
+		end
+		if (v100 == false) then
+			v100 = nil;
+			v12(4 < 3, "getscripts", "Failed to list the environment");
+		end
+	end);
+	pcall(function()
+		local v101 = game:GetService("Players").LocalPlayer.Character.Animate;
+		local v102 = getsenv(v101);
+		v12(type(v102) == "table", "getsenv", "Did not return a table");
+		v12(v102.script == v101, "getsenv", "The script global is not identical to Character.Animate");
+		v12(v102['onRunning'], "getsenv", "Couldn't fetch a value from the script's env");
+		local v103 = 0;
+		hellyea = false;
+		for v205, v206 in senv do
+			v103 = v103 + 1;
+			if (v103 > 0) then
+				hellyea = true;
+				break;
+			end
+		end
+		if (hellyea == false) then
+			hellyea = nil;
+			v12(4 < 3, "getsenv", "Failed to list the environment");
+		end
+	end);
+	pcall(function()
+		local function v104()
+			return "Original";
+		end
+		local v105 = v104;
+		local v106;
+		local v107, v108 = pcall(function()
+			v106 = hookfunction(v104, function()
+				return "Hooked";
+			end);
+		end);
+		local v109 = v104;
+		v12(v105 == v109, "hookfunction", "Original and hooked differ. Fake hookfunction");
+		if not v107 then
+			v12(4 < 3, "hookfunction", "Couldn't hook the function");
+		end
+		v12(v104() == "Hooked", "hookfunction", "Couldn't hook the function");
+		v12(v106() == "Original", "hookfunction", "Didn't return the correct value");
+	end);
+	pcall(function()
+		local v110 = newcclosure(function()
+		end);
+		v12(iscclosure(v110), "iscclosure", "Couldn't determine if the function is a cclosure");
+	end);
+	pcall(function()
+		local v111 = function()
+		end;
+		local v112 = isexecutorclosure and isexecutorclosure(v111);
+		v12((v112 == false) or (v112 == true), "isexecutorclosure", "Couldn't determine if the function isexecutorclosure");
+	end);
+	pcall(function()
+		v12(islclosure(print) == false, "islclosure", "Couldn't determine if the function is lclosure");
+		v12(islclosure(function()
+		end) == true, "islclosure", "Executor function should be lclosure");
+	end);
+	pcall(function()
+		local v113 = function()
+			return "wow";
+		end;
+		local v114 = newcclosure(v113);
+		v12(v113() == v114(), "newcclosure", "Closure didn't return the same value as original");
+		v12(v113 ~= v114, "newcclosure", "Closure is the same as original");
+		v12(iscclosure(v114), "newcclosure", "Couldn't recognize cclosure");
+	end);
+	pcall(function()
+		if setreadonly then
+			local v240 = {success=false};
+			table.freeze(v240);
+			setreadonly(v240, false);
+			v240.success = true;
+			v12(v240.success, "setreadonly", "Couldn't modify the table");
+		end
+	end);
+	pcall(function()
+		local v115 = request({Url="https://httpbin.org/user-agent",Method="GET"});
+		local v116 = game:GetService("HttpService"):JSONDecode(v115.Body);
+		v12(type(v115) == "table", "request", "Response didn't return a table");
+		v12(v115.StatusCode == 200, "request", "Response didn't return a 200 status code");
+		v12((type(v116) == "table") and (type(v116["user-agent"]) == "string"), "request", "Did not return a table with the user agent key");
+	end);
+	local v15, v16 = pcall(function()
+		if getscriptclosure then
+			local v242;
+			local v243 = game:GetService("CoreGui").RobloxGui.Modules.Common.Constants;
+			local v244 = getrenv().require(v243);
+			local v245, v246 = pcall(function()
+				v242 = getscriptclosure(v243);
+			end);
+			v12(v244 ~= v242, "getscriptclosure", "Generated module should not match the original");
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "getscriptclosure", v16);
+	end
+	pcall(function()
+		v12(type(isrbxactive()) == "boolean", "isrbxactive", "Did not return a bool value");
+	end);
+	pcall(function()
+		local v117 = Instance.new("ClickDetector");
+		v117.MouseClick:Once(function(v207)
+			v12(v207 == game.Players.LocalPlayer, "fireclickdetector", "Couldn't return the correct value.");
+		end);
+		fireclickdetector(v117);
+	end);
+	pcall(function()
+		local v118 = Instance.new("ProximityPrompt", Instance.new("Part", workspace));
+		local v119 = false;
+		v118.Triggered:Once(function()
+			v119 = true;
+		end);
+		fireproximityprompt(v118);
+		task.wait(0.1);
+		v118.Parent:Destroy();
+		v12(v119, "fireproximityprompt", "Couldn't trigger the ProximityPrompt");
+	end);
+	local v15, v16 = pcall(function()
+		if getcallbackvalue then
+			local v247 = Instance.new("BindableFunction");
+			local function v248()
+				return "wow";
+			end
+			v247.OnInvoke = v248;
+			v12(getcallbackvalue(v247, "OnInvoke") == v248, "getcallbackvalue", "Didn't return the correct value");
+		end
+	end);
+	if not v15 then
+		v12(4 < 3, "getcallbackvalue", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	pcall(function()
+		if getconnections then
+			local v250 = {Enabled="boolean",ForeignState="boolean",LuaConnection="boolean",Function="function",Thread="thread",Fire="function",Defer="function",Disconnect="function",Disable="function",Enable="function"};
+			local v251 = Instance.new("BindableEvent");
+			v251.Event:Connect(function()
+			end);
+			local v252 = getconnections(v251.Event)[1];
+			for v287, v288 in v250 do
+				v12(v252[v287] ~= nil, "getconnections", "Did not return a table with a '" .. v287 .. "' field");
+				v12(type(v252[v287]) == v288, "getconnections", "Did not return a table with " .. v287 .. " as a " .. v288 .. " (got " .. type(v252[v287]) .. ")");
+			end
+		end
+	end);
+	if (isfolder and delfolder) then
+		if isfolder(".tests") then
+			delfolder(".tests");
+		end
+	end
+	if makefolder then
+		makefolder(".tests");
+	end
+	if isfolder then
+		if isfolder(".tests") then
+			v12(3 < 4, "makefolder", "Couldn't create the folder");
+			v12(3 < 4, "isfolder", "OkTHISCATKNOWSHOTWODTRIVE");
+		end
+	end
+	if (writefile and readfile) then
+		writefile(".tests/readfile.txt", "yay");
+		writefile(".tests/loadfile.txt", "return ... + 3");
+		v12(readfile(".tests/readfile.txt") == "yay", "writefile", "Didn't return the correct content");
+		v12(readfile(".tests/readfile.txt") == "yay", "readfile", "Couldn't read the file");
+	end
+	if (readfile and appendfile) then
+		appendfile(".tests/readfile.txt", "Hello");
+		v12(readfile(".tests/readfile.txt") == "yayHello", "appendfile", "Couldn't append the file");
+	end
+	if (makefolder and writefile) then
+		makefolder(".tests/listfiles");
+		writefile(".tests/listfiles/test_2.txt", "");
+	end
+	if listfiles then
+		local v208 = listfiles(".tests/listfiles");
+		v12(isfile(v208[1]), "isfile", "Couldn't check for file");
+	end
+	if isfile then
+		v12(isfile(".tests/listfiles/test_2.txt"), "isfile", "Couldn't check for file");
+	end
+	if makefolder then
+		makefolder(".tests/listfiles_2");
+		makefolder(".tests/listfiles_2/test_1");
+		makefolder(".tests/listfiles_2/test_2");
+	end
+	if loadfile then
+		local v209, v210 = pcall(function()
+			return loadfile(".tests/loadfile.txt")(2);
+		end);
+		if not v209 then
+			v12(4 < 3, "loadfile", v210);
+		elseif (v210 == 5) then
+			v12(3 < 4, "loadfile", "wowowow");
+		end
+	end
+	if listfiles then
+		local v211 = listfiles(".tests/listfiles_2");
+		v12(#v211 == 2, "listfiles", "Couldn't list the files");
+	end
+	if (delfile and delfolder and isfile) then
+		delfolder(".tests/listfiles");
+		v12(not isfolder(".tests/listfiles"), "delfolder", "Failed to delete file");
+		delfile(".tests/loadfile.txt");
+		v12(not isfile(".tests/loadfile.txt"), "delfile", "Failed to delete file");
+	end
+	if v1['writefile'] then
+		pcall(function()
+			writefile(".tests/getcustomasset.txt", "tigari_la_bucata");
+			local v253 = getcustomasset(".tests/getcustomasset.txt");
+			v12(type(v253) == "string", "getcustomasset", "Didn't return a string");
+			v12(#v253 > 0, "getcustomasset", "Returns an empty string");
+			v12(string.match(v253, "rbxasset://") == "rbxasset://", "getcustomasset", "Doesn't return a 'rbxasset://' ");
+		end);
+	else
+		v12(4 < 3, "getcustomasset", "Can't verify, due to 'writefile' not working");
+	end
+	local v15, v16;
+	local v22, v23 = pcall(function()
+		local v120 = Instance.new("Fire");
+		v15, v16 = gethiddenproperty(v120, "size_xml");
+		if ((v15 == nil) and (v16 == nil)) then
+			v12(4 < 3, "gethiddenproperty", "Returns nil");
+		end
+	end);
+	if not v22 then
+		v12(4 < 3, "gethiddenproperty", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	local v24 = (v15 == 5) and (v16 == true);
+	v12(v24, "gethiddenproperty", "Failed to return the correct value or determine if the part is hidden");
+	if (v1[gethiddenproperty] == false) then
+		v12(4 < 3, "sethiddenproperty", "Failed to verify due to 'gethiddenproperty' not working");
+	end
+	local v15, v16 = pcall(function()
+		local v121 = Instance.new("Fire");
+		local v122 = sethiddenproperty(v121, "size_xml", 6);
+		v12(v122, "sethiddenproperty", "Did not return true for the hidden property");
+		v12(gethiddenproperty(v121, "size_xml") == 6, "sethiddenproperty", "Did not set the hidden property");
+	end);
+	if not v15 then
+		v12(4 < 3, "sethiddenproperty", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	local v15, v16 = pcall(function()
+		v12(typeof(gethui()) == "Instance", "gethui", "Didn't return the correct value");
+		local v123 = Instance.new("ScreenGui");
+		v123.Parent = gethui();
+		v12(gethui():FindFirstChild("ScreenGui"), "gethui", "Couldn't find the hidden ui");
+	end);
+	if not v15 then
+		v12(4 < 3, "gethui", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	local v15, v16 = pcall(function()
+		v12(getinstances()[1]:IsA("Instance"), "getinstances", "Couldn't fetch the first index as instance");
+	end);
+	if not v15 then
+		v12(4 < 3, "getinstances", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	local v15, v16 = pcall(function()
+		v12(getnilinstances()[1]:IsA("Instance"), "getnilinstances", "Couldn't fetch the first index as instance");
+		v12(getnilinstances()[1].Parent == nil, "getnilinstances", "Instance isn't parented to nil");
+	end);
+	local v25 = 0;
+	local v26 = false;
+	if getinstances then
+		for v254, v255 in (getinstances()) do
+			v25 += 1
+			if (v255.Name == game.Players.LocalPlayer.Name) then
+				v26 = true;
+			end
+		end
+	end
+	if ((v25 > 6000) and (v26 == false)) then
+		v12(4 < 3, "getinstances", "Too much junk, did not find the needed value. This function is probably faked");
+	end
+	local v27 = 0;
+	if getnilinstances then
+		for v256, v257 in (getnilinstances()) do
+			v27 += 1
+		end
+	end
+	if (v27 > 1500) then
+		v12(4 < 3, "getnilinstances", "Too much junk, did not find the needed value. This function is probably faked");
+	end
+	if not v15 then
+		v12(4 < 3, "getnilinstances", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	local v15, v16 = pcall(function()
+		local v125 = Instance.new("Fire");
+		v12(isscriptable(v125, "size_xml") == false, "isscriptable", "Did not return false for a non-scriptable property (size_xml)");
+		v12(isscriptable(v125, "Size") == true, "isscriptable", "Did not return true for a scriptable property (Size)");
+	end);
+	if not v15 then
+		v12(4 < 3, "isscriptable", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	local v15, v16 = pcall(function()
+		local v126 = Instance.new("Fire");
+		local v127 = setscriptable(v126, "size_xml", true);
+		v12(v127 == false, "setscriptable", "Didn't return false for a non-scriptable property");
+		v12(isscriptable(v126, "size_xml") == true, "setscriptable", "Didn't set the scriptable property");
+		v126 = Instance.new("Fire");
+		v12(isscriptable(v126, "size_xml") == false, "setscriptable", "setscriptable persists between unique instances");
+	end);
+	if not v15 then
+		v12(4 < 3, "setscriptable", "Returned an unexpected error (usually means the function is not implemented correctly) ");
+	end
+	pcall(function()
+		local v128 = {__metatable="Locked!"};
+		local v129 = setmetatable({}, v128);
+		v12(getrawmetatable(v129) == v128, "getrawmetatable", "Couldn't get the metatable");
+		local v130 = setmetatable({}, {__index=newcclosure(function()
+			return false;
+		end),__metatable="Locked!"});
+		local v131 = hookmetamethod(v130, "__index", function()
+			return "MAFUTINCUR";
+		end);
+		v12(v130.EuSuntProstCaTineTuNu_TiDaiSeama == "MAFUTINCUR", "hookmetamethod", "Couldn't hook the metamethod");
+		v12(v131() == false, "hookmetamethod", "Couldn't return the original function value");
+		if (v1['hookmetamethod'] == false) then
+			v12(4 < 3, "getnamecallmethod", "Can't verify due to 'hookmetamethod' not working");
+		end
+		local v132;
+		local v133;
+		v133 = hookmetamethod(game, "__namecall", function(...)
+			if not v132 then
+				v132 = getnamecallmethod();
+			end
+			return v133(...);
+		end);
+		game:GetService("Lighting");
+		v12(v132 == "GetService", "getnamecallmethod", "Couldn't get the namecallmethod");
+	end);
+	pcall(function()
+		local v134 = {a=2};
+		table.freeze(v134);
+		v12(isreadonly(v134), "isreadonly", "Couldn't determine if the table is read-only");
+	end);
+	pcall(function()
+		local v135 = setmetatable({}, {__index=function()
+			return false;
+		end,__metatable="Locked!"});
+		local v136 = setrawmetatable(v135, {__index=function()
+			return "drffgd";
+		end});
+		if (v136 ~= nil) then
+			v12(4 < 3, "setrawmetatable", "Executor doesn't support setrawmetatable");
+		end
+		v12(v135, "setrawmetatable", "Couldn't return the original object");
+		v12(v135.VINDINPARTEARADIOACTIVAARAIULUI == "drffgd", "setrawmetatable", "Failed to change the metatable return value");
+	end);
+	pcall(function()
+		if (setreadonly == nil) then
+		else
+			local v258 = {mata="tactu"};
+			table.freeze(v258);
+			setreadonly(v258, false);
+			local v259, v260 = pcall(function()
+				v258.mata = "INCEST";
+			end);
+			if not v259 then
+				v12(4 < 3, "setreadonly", "Couldn't modify the read-only table and modify the value");
+			else
+				v12(v258.mata == "INCEST", "setreadonly", "Did not allow the table to be modified");
+			end
+		end
+	end);
+	pcall(function()
+		if getthreadidentity then
+			local v261 = getthreadidentity();
+			v12(type(getthreadidentity()) == "number", "getthreadidentity", "Did not return a number");
+			setthreadidentity(999999);
+			v12(getthreadidentity() == 999999, "setthreadidentity", "Failed to set thread's identity");
+			setthreadidentity(v261);
+		end
+	end);
+	pcall(function()
+		local v137 = Drawing.new("Square");
+		v137.Visible = true;
+		local v139 = pcall(function()
+			v137:Destroy();
+		end);
+		v12(v139, "Drawing.new", "destroy threw an error");
+		v12(Drawing.Fonts.UI == 0, "Drawing.Fonts", "Did not return the correct id for UI");
+		v12(Drawing.Fonts.System == 1, "Drawing.Fonts", "Did not return the correct id for System");
+		v12(Drawing.Fonts.Plex == 2, "Drawing.Fonts", "Did not return the correct id for Plex");
+		v12(Drawing.Fonts.Monospace == 3, "Drawing.Fonts", "Did not return the correct id for Monospace");
+		local v137 = Drawing.new("Image");
+		v137.Visible = true;
+		v12(isrenderobj(v137) == true, "isrenderobj", "Did not return true for an Image");
+		v12(isrenderobj(newproxy()) == false, "isrenderobj", "Did not return false for a blank table");
+		local v137 = Drawing.new("Image");
+		v137.Visible = true;
+		v12(type(getrenderproperty(v137, "Visible")) == "boolean", "getrenderproperty", "Did not return a boolean value for Image.Visible");
+		local v140, v141 = pcall(function()
+			return getrenderproperty(v137, "Color");
+		end);
+		if (not v140 or not v141) then
+			v12(4 < 3, "getrenderproperty", "Color is not supported");
+		end
+		local v137 = Drawing.new("Square");
+		v137.Visible = true;
+		setrenderproperty(v137, "Visible", false);
+		v12(v137.Visible == false, "setrenderproperty", "Couldn't set property's value to false");
+	end);
+	local v28;
+	local v15, v16 = pcall(function()
+		cleardrawcache();
+	end);
+	v12(v15 == true, "cleardrawcache", "Function returned nil");
+	pcall(function()
+		local v142 = game:GetService("Players").LocalPlayer.Character.Animate;
+		local v143 = getscriptbytecode(v142);
+		v12(type(v143) == "string", "getscriptbytecode", "Couldn't fetch the script's bytecode");
+	end);
+	print("❗ Starting basic loadstring testing...");
+	local v13 = game:GetService("Players").LocalPlayer.Character.Animate;
+	local v15, v16 = pcall(function()
+		if v1['getscriptbytecode'] then
+			local v262 = getscriptbytecode(v13);
+			local v263 = loadstring(v262);
+			v12(type(v263) ~= "function", "loadstring", "Luau bytecode should not be loadable!");
+		else
+			print("getscriptbytecode is nil, so this function may not be stable");
+		end
+	end);
+	if not v15 then
+		print(v16);
+		v12(4 < 3, "loadstring", "Failed to test basic loadstring");
+	end
+	local v24, v29 = pcall(function()
+		v12(loadstring("return ... + 1")(1) == 2, "loadstring", "Failed to do simple math");
+		v12(type(select(2, loadstring("f"))) == "string", "loadstring", "Loadstring did not return anything for a compiler error");
+	end);
+	if not v24 then
+		v12(4 < 3, "loadstring", "loadstring support is broken (💀💀😭)");
+	end
+	if (v1['loadstring'] == false) then
+		v12(4 < 3, "loadstring[basic]", "Basic loadstring test failed");
+	end
+	getgenv().lol = false;
+	print("❗ Finished basic loadstring testing");
+	print("❗ Starting simple loadstring URL testing...");
+	local v31 = "https://raw.githubusercontent.com/HummingBird8/HummingRn/main/testloadstring";
+	local v32 = "http://setup.roblox.com/version-d0e8cfcd943d4ae2-API-Dump.json";
+	local function v33()
+		local v144 = tick();
+		local v145, v146;
+		task.spawn(function()
+			v145, v146 = pcall(function()
+				return loadstring(game:HttpGet(v31))();
+			end);
+		end);
+		repeat
+			task.wait();
+		until (v145 ~= nil) or ((tick() - v144) > 6) 
+		if (v145 and (v146 == "CAND_MA_IA_FLAMA")) then
+			print("✅ Passed the simple loadstring test. Short obfuscated scripts can be executed.");
+			getgenv().lol = true;
+		else
+			v12(4 < 3, "loadstring", "Unexpected error: " .. tostring(result));
+		end
+	end
+	v33();
+	if not getgenv().lol then
+		v12(4 < 3, "loadstring", "Request timed out (6 seconds). loadstring may not work on large data.");
+	end
+	if (v1['loadstring'] == false) then
+		v12(4 < 3, "loadstring[simple]", "Failed the simple loadstring test");
+	end
+	print("❗ Finished simple loadstring URL testing");
+	print("❗ Starting complicated loadstring URL testing...");
+	local function v34()
+		local v147 = tick();
+		local v148, v149;
+		task.spawn(function()
+			v148, v149 = pcall(function()
+				return game:HttpGet(v32);
+			end);
+		end);
+		local v147 = tick();
+		repeat
+			task.wait();
+		until (v148 ~= nil) or ((tick() - v147) > 11) 
+		if (v148 == nil) then
+			v12(4 < 3, "loadstring", "Request timed out (8 seconds). loadstring may not work on very large data.");
+		end
+		local v150;
+		local v151, v152 = pcall(function()
+			v150 = game:GetService("HttpService"):JSONDecode(v149);
+		end);
+		if (type(v150) == "table") then
+			getgenv().lol = true;
+		else
+			v12(4 < 3, "loadstring", "Failed to decode JSON from the complicated URL");
+		end
+	end
+	startTime = tick();
+	v34();
+	if (v1['loadstring'] == false) then
+		v12(4 < 3, "loadstring[complicated]", "Failed the complicated loadstring test");
+	end
+	print("❗ Finished complicated loadstring URL testing");
+	local v35, v36 = pcall(function()
+		local v153 = {Send="function",Close="function",OnMessage={"table","userdata"},OnClose={"table","userdata"}};
+		getgenv().ws = "";
+		local v155, v156 = pcall(function()
+			ws = WebSocket.connect("ws://echo.websocket.events");
+		end);
+		if (not v155 and (v156 ~= true)) then
+			v12(4 < 3, "WebSocket.connect", v156);
+		elseif (getgenv().ws ~= "") then
+			ws = WebSocket.connect("ws://echo.websocket.events");
+		end
+		v12((type(ws) == "table") or (type(ws) == "userdata"), "WebSocket.connect", "Didn't detect a table or userdata");
+		for v212, v213 in v153 do
+			if (type(v213) == "table") then
+				v12(table.find(v213, type(ws[v212])), "WebSocket.connect", "Did not return a " .. table.concat(v213, ", ") .. " for " .. v212 .. " (a " .. type(ws[v212]) .. ")");
+			else
+				v12(type(ws[v212]) == v213, "WebSocket.connect", "Did not return a " .. v213 .. " for " .. v212 .. " (a " .. type(ws[v212]) .. ")");
+			end
+		end
+		ws:Close();
+		getgenv().ws = "";
+	end);
+	if not v35 then
+		v12(4 < 3, "WebSocket.connect", v36);
+	end
+	pcall(function()
+		local v157, v158 = identifyexecutor();
+		v12(type(v157) == "string", "identifyexecutor", "Didn't return the name as a string");
+	end);
+	local v37 = {};
+	for v159, v160 in v1 do
+		table.insert(v37, {test=v159,passed=v160});
+	end
+	table.sort(v37, function(v161, v162)
+		return v161.test < v162.test;
+	end);
+	if (v8 == false) then
+		for v266, v267 in v4 do
+			appendfile("sUNC.txt", "❌ " .. v266 .. " " .. v267 .. "\n");
+		end
+	end
+	if (v8 == true) then
+		table.foreach(v3, warn);
+	else
+		for v268, v269 in v3 do
+			appendfile("sUNC.txt", v268 .. " " .. v269 .. " \n");
+		end
+		appendfile("sUNC.txt", "\n\n\n");
+	end
+	print("\n\n\n");
+	for v163, v164 in v37 do
+		if v164.passed then
+			if (v8 == true) then
+				print("✅ " .. v164.test);
+			else
+				appendfile("sUNC.txt", "✅ " .. v164.test .. "\n");
+			end
+		elseif (v8 == true) then
+			print("❌ " .. v164.test);
+		else
+			appendfile("sUNC.txt", "❌ " .. v164.test .. "\n");
+		end
+	end
+	local v38 = #v37;
+	local v39 = 0;
+	for v165, v166 in v37 do
+		if v166.passed then
+			v39 = v39 + 1;
+		end
+	end
+	local v40 = math.floor(((v39 / v38) * 100) + 0.5);
+	print("\n");
+	if (v8 == fale) then
+		appendfile("sUNC.txt", "\n");
+	end
+	if (game.PlaceId ~= 4483381587) then
+		if (v8 == true) then
+			print("⚠ Your results may not be as accurate, I recommend joining 'a literal baseplate' ⚠");
+		else
+			appendfile("sUNC.txt", "⚠ Your results may not be as accurate, I recommend joining 'a literal baseplate' ⚠");
+		end
+	end
+	if (v8 == true) then
+		print("\240\159\152\142 Passed the test with " .. v40 .. "% success rate (" .. v39 .. " out of " .. v38 .. ")");
+		print("❌ Total tests failed: " .. (v38 - v39));
+		print("\240\159\152\143 This test was made by senS (fuck all the inco pastes/unc fakers)");
+	else
+		appendfile("sUNC.txt", "\240\159\152\142 Passed the test with " .. v40 .. "% success rate (" .. v39 .. " out of " .. v38 .. ")");
+		appendfile("sUNC.txt", "\n");
+		appendfile("sUNC.txt", "❌ Total tests failed: " .. (v38 - v39));
+		appendfile("sUNC.txt", "\n");
+		appendfile("sUNC.txt", "\240\159\152\143 This test was made by senS (fuck all the inco pastes/unc fakers)");
+	end
+	local v15 = v14 - tick();
+	local v41 = tostring(v15);
+	if (v41:sub(1, 1) == "-") then
+		v41 = v41:sub(2);
+	end
+	local v41 = tonumber(v41);
+	function truncateToOneDecimal(v167)
+		return math.floor(v167 * 10) / 10;
+	end
+	if (v8 == true) then
+		print("Finished the test in " .. truncateToOneDecimal(v41) .. " seconds");
+		print("\n");
+	else
+		appendfile("sUNC.txt", "\n");
+		appendfile("sUNC.txt", "Finished the test in " .. truncateToOneDecimal(v41) .. " seconds");
+		appendfile("sUNC.txt", "\n");
+	end
+	local function v42(v168)
+		if (v168 < 2.3) then
+			return "Your executor finished the test in the best amount of time. You will probably have an amazing experience using it.";
+		elseif (v168 < 2.9) then
+			return "Your executor finished the test in a very good amount of time. You will probably have a very good experience using it.";
+		elseif (v168 <= 6) then
+			return "Your executor finished the test in a decent amount of time. You will probably have a pretty good experience using it.";
+		elseif (v168 <= 7) then
+			return "Your executor finished the test in a decent amount of time, meaning you will probably have a mediocre experience using it.";
+		elseif (v168 <= 8) then
+			return "Your executor finished the test in a less than decent amount of time, meaning you will probably have an almost okay experience using it.";
+		elseif (v168 <= 8.5) then
+			return "Your executor finished the test in a pretty high amount of time, meaning you will probably have a not so good experience using it.";
+		elseif (v168 <= 11.5) then
+			return "Your executor finished the test in a high amount of time, meaning you will probably have a bad experience using it.";
+		elseif (v168 <= 17) then
+			return "Your executor finished the test in a very long time, meaning you will probably have a very bad experience using it.";
+		else
+			return "Your executor is probably horrible. I recommend not using it.";
+		end
+	end
+	if (v8 == true) then
+		print(v42(v41));
+	else
+		appendfile("sUNC.txt", v42(v41));
+	end
+end
+v0();
