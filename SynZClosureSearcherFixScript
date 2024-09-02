@@ -1,0 +1,37 @@
+--GRH, fix crashes pleases
+
+local sigmaSearcher = {}
+
+sigmaSearcher.getGc = getgc
+sigmaSearcher.getInfo = debug.getinfo or getinfo
+sigmaSearcher.getUpvalue = debug.getupvalue or getupvalue or getupval
+sigmaSearcher.getConstants = debug.getconstants or getconstants or getconsts
+sigmaSearcher.isXClosure = is_synapse_function or issentinelclosure or is_protosmasher_closure or is_sirhurt_closure or istempleclosure or checkclosure
+sigmaSearcher.isLClosure = islclosure or is_l_closure or (iscclosure and function(f) return not iscclosure(f) end)
+
+assert(sigmaSearcher.getGc and sigmaSearcher.getInfo and sigmaSearcher.getConstants and sigmaSearcher.isXClosure, "Your exploit is not supported")
+
+function sigmaSearcher.matchConstants(closure, list)
+    return true
+end
+
+function sigmaSearcher.searchClosure(script, name, upvalueIndex, constants)
+
+    for _i, v in pairs(sigmaSearcher.getGc()) do
+        if type(v) == "function" and sigmaSearcher.isLClosure(v) and not sigmaSearcher.isXClosure(v) and 
+            pcall(sigmaSearcher.getUpvalue, v, upvalueIndex)
+        then
+            if ((name and name ~= "Unnamed function") and sigmaSearcher.getInfo(v).name == name) and sigmaSearcher.matchConstants(v, constants) then
+                print("Closure matched by name and constants\n")
+                return v
+            elseif (not name or name == "Unnamed function") and sigmaSearcher.matchConstants(v, constants) then
+                print("Closure matched by constants only\n")
+                return v
+            end
+        end
+    end
+
+    return "Couldn't find the the specified closure"
+end
+
+return sigmaSearcher
