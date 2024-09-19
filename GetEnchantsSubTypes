@@ -1,0 +1,33 @@
+
+EnchantsSubInfo = {
+    Luring = {
+        ["DispSpec"] = "Lure",
+        ["Name"] = "Luring",
+        ["DispType"] = "Add",
+        ["Value"] = 0.25,
+        ["Desc"] = "It seems to attract fish faster than usual.",
+    },
+    Lucky = {
+        ["DispSpec"] = "Rarity Chance",
+        ["Name"] = "Lucky",
+        ["DispType"] = "Add",
+        ["Value"] = 0.25,
+        ["Desc"] = "It seems to attract rare fish more often than usual.",
+    },
+    Sturdy = {
+        ["DispSpec"] = "Strength",
+        ["Name"] = "Sturdy",
+        ["DispType"] = "Add",
+        ["Value"] = 0.25,
+        ["Desc"] = "It seems to attract giant fish more often, and reel fish in easier than usual.",
+    },
+    Magnetic = {
+        ["DispSpec"] = "Item Chance",
+        ["Name"] = "Magnetic",
+        ["DispType"] = "Add",
+        ["Value"] = 0.25,
+        ["Desc"] = "It seems to catch items more often than usual.",
+    },
+}
+
+return EnchantsSubInfo
