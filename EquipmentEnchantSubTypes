@@ -1,49 +1,49 @@
 EquipmentEnchantSubTypes = {
     [1] = {
-      [Stats] = {
-        [AttackSize] = 0.3,
+      ["Stats"] = {
+        ["AttackSize"] = 0.3,
       },
-      [Name] = "Bursting",
-      [Desc] = "It seems to increase the size of your attacks a bit more than usual.",
+      ["Name"] = "Bursting",
+      ["Desc"] = "It seems to increase the size of your attacks a bit more than usual.",
     },
     [3] = {
-      [Stats] = {
-        [Intensity] = 0.3,
+      ["Stats"] = {
+        ["Intensity"] = 0.3,
       },
-      [Name] = "Amplified",
-      [Desc] = "It seems to increase your intensity a bit more than usual.",
+      ["Name"] = "Amplified",
+      ["Desc"] = "It seems to increase your intensity a bit more than usual.",
     },
   
     [4] = {
-      [Stats] = {
-        [AttackSpeed] = 0.3,
+      ["Stats"] = {
+        ["AttackSpeed"] = 0.3,
       },
-      [Name] = "Swift",
-      [Desc] = "It seems to increase the speed of your attacks a bit more than usual.",
+      ["Name"] = "Swift",
+      ["Desc"] = "It seems to increase the speed of your attacks a bit more than usual.",
     },
   
     [7] = {
-      [Stats] = {
-        [Defense] = 1.1,
+      ["Stats"] = {
+        ["Defense"] = 1.1,
       },
-      [Name] = "Hard",
-      [Desc] = "It seems to increase your defense a bit more than usual.",
+      ["Name"] = "Hard",
+      ["Desc"] = "It seems to increase your defense a bit more than usual.",
     },
   
     [6] = {
-      [Stats] = {
-        [Power] = 0.1,
+      ["Stats"] = {
+        ["Power"] = 0.1,
       },
-      [Name] = "Strong",
-      [Desc] = "It seems to increase your power a bit more than usual.",
+      ["Name"] = "Strong",
+      ["Desc"] = "It seems to increase your power a bit more than usual.",
     },
   
     [8] = {
-      [Stats] = {
-        [Agility] = 0.3,
+      ["Stats"] = {
+        ["Agility"] = 0.3,
       },
-      [Name] = "Nimble",
-      [Desc] = "It seems to increase your agility a bit more than usual.",
+      ["Name"] = "Nimble",
+      ["Desc"] = "It seems to increase your agility a bit more than usual.",
     },
 }
 
