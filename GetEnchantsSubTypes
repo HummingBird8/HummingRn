@@ -1,33 +1,70 @@
+local DispSpec = "DispSpec"
+local Name = "Name"
+local DispType = "DispType"
+local Value = "Value"
+local Desc = "Desc"
+local AddedRarity = "AddedRarity"
 
-EnchantsSubInfo = {
-    Luring = {
-        ["DispSpec"] = "Lure",
-        ["Name"] = "Luring",
-        ["DispType"] = "Add",
-        ["Value"] = 0.25,
-        ["Desc"] = "It seems to attract fish faster than usual.",
+xd = {
+    [1] = {
+        [DispSpec] = "Lure",
+        [Name] = "Luring",
+        [DispType] = "Add",
+        [Value] = 0.25,
+        [Desc] = "It seems to attract fish faster than usual.",
     },
-    Lucky = {
-        ["DispSpec"] = "Rarity Chance",
-        ["Name"] = "Lucky",
-        ["DispType"] = "Add",
-        ["Value"] = 0.25,
-        ["Desc"] = "It seems to attract rare fish more often than usual.",
+    [8] = {
+        [DispSpec] = "Item Chance",
+        [Name] = "Treasurer",
+        [DispType] = "Add",
+        [Value] = 0.5,
+        [Desc] = "The powerful enchantment placed on it seems to cause it to catch items much more often than usual.",
+        [AddedRarity] = 1,
     },
-    Sturdy = {
-        ["DispSpec"] = "Strength",
-        ["Name"] = "Sturdy",
-        ["DispType"] = "Add",
-        ["Value"] = 0.25,
-        ["Desc"] = "It seems to attract giant fish more often, and reel fish in easier than usual.",
+    [3] = {
+        [DispSpec] = "Rarity Chance",
+        [Name] = "Lucky",
+        [DispType] = "Add",
+        [Value] = 0.25,
+        [Desc] = "It seems to attract rare fish more often than usual.",
     },
-    Magnetic = {
-        ["DispSpec"] = "Item Chance",
-        ["Name"] = "Magnetic",
-        ["DispType"] = "Add",
-        ["Value"] = 0.25,
-        ["Desc"] = "It seems to catch items more often than usual.",
+    [2] = {
+        [DispSpec] = "Strength",
+        [Name] = "Sturdy",
+        [DispType] = "Add",
+        [Value] = 0.25,
+        [Desc] = "It seems to attract giant fish more often, and reel fish in easier than usual.",
+    },
+    [5] = {
+        [DispSpec] = "Lure",
+        [Name] = "Ensnaring",
+        [DispType] = "Add",
+        [Value] = 0.5,
+        [Desc] = "The powerful enchantment placed on it seems to cause fish to be attracted to it much faster than usual.",
+        [AddedRarity] = 1,
+    },
+    [4] = {
+        [DispSpec] = "Item Chance",
+        [Name] = "Magnetic",
+        [DispType] = "Add",
+        [Value] = 0.25,
+        [Desc] = "It seems to catch items more often than usual.",
+    },
+    [7] = {
+        [DispSpec] = "Rarity Chance",
+        [Name] = "Graced",
+        [DispType] = "Add",
+        [Value] = 0.5,
+        [Desc] = "The powerful enchantment placed on it seems to cause it to catch rare fish much more often than usual.",
+        [AddedRarity] = 1,
+    },
+    [6] = {
+        [DispSpec] = "Strength",
+        [Name] = "Toughened",
+        [DispType] = "Add",
+        [Value] = 0.5,
+        [Desc] = "The powerful enchantment placed on it seems to cause giant fish to be attracted to it much more often, and reel fish in much easier than usual.",
+        [AddedRarity] = 1,
     },
 }
-
-return EnchantsSubInfo
+return xd
