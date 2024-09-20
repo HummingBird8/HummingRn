@@ -1,0 +1,26 @@
+RamEnchants = {
+    [1] = {
+        ["Stats"] = {
+            ["Durability"] = 400,
+            ["RamDefense"] = 300,
+        },
+        ["Name"] = "Hard",
+        ["Desc"] = "It seems to be more reinforced than usual, with increased ram defense and durability.",
+    },
+    [3] = {
+        ["DispSpec"] = "Ramming Speed",
+        ["Name"] = "Swift",
+        ["DispType"] = "Add",
+        ["Value"] = 0.2,
+        ["Desc"] = "It seems more lightweight than usual, with increased ramming speed.",
+    },
+    [2] = {
+        ["Stats"] = {
+            ["RamStrength"] = 450,
+        },
+        ["Name"] = "Strong",
+        ["Desc"] = "It seems stronger than usual, with increased ram strength.",
+    },
+}
+
+return RamEnchants
