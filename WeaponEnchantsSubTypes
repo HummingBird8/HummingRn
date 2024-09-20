@@ -1,0 +1,26 @@
+WeaponEnchants = {
+    [1] = {
+      ["DispSpec"] = "Attack Damage",
+      ["Name"] = "Strong",
+      ["DispType"] = "Multiply",
+      ["Value"] = 1.05,
+      ["Desc"] = "It seems to deal a bit more damage than usual.",
+    },
+    [3] = {
+      ["DispSpec"] = "Attack Size",
+      ["Name"] = "Bursting",
+      ["DispType"] = "Multiply",
+      ["Value"] = 1.1,
+      ["Desc"] = "It seems to have bigger attacks than usual.",
+    },
+    [2] = {
+      ["DispSpec"] = "Attack Speed",
+      ["Name"] = "Swift",
+      ["DispType"] = "Multiply",
+      ["Value"] = 0.925,
+      ["InvValue"] = 1.075,
+      ["Desc"] = "It seems to be a bit less heavy than usual.",
+    },
+}
+
+return WeaponEnchants
