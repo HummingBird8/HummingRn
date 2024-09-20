@@ -1,0 +1,25 @@
+ShieldEnchants = {
+    [1] = {
+      ["DispSpec"] = "Total Durability",
+      ["Name"] = "Sturdy",
+      ["DispType"] = "Multiply",
+      ["Value"] = 1.25,
+      ["Desc"] = "It seems to be more durable than usual.",
+    },
+    [3] = {
+      ["DispSpec"] = "Attack Size",
+      ["Name"] = "Bursting",
+      ["DispType"] = "Multiply",
+      ["Value"] = 1.15,
+      ["Desc"] = "It seems to have bigger attacks than usual.",
+    },
+    [2] = {
+      ["DispSpec"] = "Blocking Power",
+      ["Name"] = "Hard",
+      ["DispType"] = "Add",
+      ["Value"] = 0.1,
+      ["Desc"] = "It seems to be better at blocking attacks than usual.",
+    },
+  }
+
+return ShieldEnchants
