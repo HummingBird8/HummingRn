@@ -1,0 +1,28 @@
+HullEnchants = {
+    [1] = {
+        ["Stats"] = {
+            ["Durability"] = 1000,
+            ["RamDefense"] = 300,
+        },
+        ["Name"] = "Hard",
+        ["Desc"] = "It seems to be more reinforced than usual, with increased durability and ram defense.",
+    },
+    [3] = {
+        ["Stats"] = {
+            ["Stability"] = 10,
+            ["RamStrength"] = 450,
+        },
+        ["Name"] = "Strong",
+        ["Desc"] = "It seems to be more stable than usual, with increased ram strength.",
+    },
+    [2] = {
+        ["Stats"] = {
+            ["Speed"] = 5,
+            ["Turning"] = 10,
+        },
+        ["Name"] = "Swift",
+        ["Desc"] = "It seems to be more lightweight than usual, with increased speed and turning power.",
+    },
+}
+
+return HullEnchants
